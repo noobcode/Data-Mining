@@ -1,0 +1,96 @@
+==============================
+DATA UNDERSTANDING --- draft
+==============================
+
+#############
+### INTRO ###
+#############
+
+Simulated dataset called "Human Resources Analytics - Why are our best and most experienced employees leaving prematurely?". 
+
+######################
+### DATA SEMANTICS ###
+######################
+
+The dataset is stored in a flat file of size around 1.1 MBs and formatted as Comma Separated Values (.csv).
+The dataset is composed of 14999 entries indexed from 0 to 14998, and 10 columns.
+Each row corresponds to an employee and each column represents a feature.
+
+### Types of Attributes ###
+
+For each employee are stored the following attributes:
+Kinds of features:
+- satisfaction_level is the level of satisfaction of the employee
+- last_evaluation is the number of years passed since the last performance evaluation
+- number_project is the number of projects completed while at work
+- average_montly_hours represents the average monthly hours spent at workplace
+- time_spend_company represents how many years the employee spent in the company
+- work_accident represents whether the employee had a workplace accident
+- left whether the employee left the company or not
+- promotion_last_5years whether the employee was promoted in the last five years
+- sales is the department in which they work for
+- salary is the relative level of salary
+
+
+Table explaining data attributes:
+---------------------------------------------------------------------
+Feature					|	Type		| SubType		|	Domain	|
+---------------------------------------------------------------------
+satisfaction_level			numerical		continuous		[0,1]
+last_evaluation				numerical		continuous		floats+
+number_project				numerical		discrete		integers+
+average_montly_hours		numerical		discrete		integers+		
+time_spend_company			numerical		discrete		integers+
+work_accident				categorical		nominal			{0,1}
+left						categorical		nominal			{0,1}
+promotion_last_5years		categorical		nominal			{0,1}
+sales						categorical		nominal			{'sales','accounting','hr','technical','support',
+															 'management','IT','product_mng','marketing','RandD'}
+salary						categorical		ordinal			{'low','medium', 'high'}
+-----------------------------------------------------------------------
+
+- put table of data sample
+
+####################################################
+### Distribution of the Variables and Statistics ###
+####################################################
+1. table of df.describe()
+2. bar charts of categorical features
+3. histograms of numerical features
+
+
+
+##########################################################
+### Assessing Data Quality  (missing values, outliers) ###
+##########################################################
+There are no missing values.
+check the quality of the data by looking at the unique values of the features
+- syntactic accuracy, yes because every attribute value is consistent with the domain specified in the table above
+- semantic accuracy, completeness and timeliness, assumed correct since the dataset is simulated
+- Unbalanced data, needs visualization
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+ 
+
+link of data set: https://www.kaggle.com/ludobenistant/hr-analytics
+
+#################
+# data semantics
+#################
+
+
