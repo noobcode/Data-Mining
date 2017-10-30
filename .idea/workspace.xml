@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="118d4790-3f92-4900-9314-56cf37c14479" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.ipynb_checkpoints/data_understanding-checkpoint.ipynb" afterPath="$PROJECT_DIR$/.ipynb_checkpoints/data_understanding-checkpoint.ipynb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/data_understanding.ipynb" afterPath="$PROJECT_DIR$/data_understanding.ipynb" />
     </list>
     <ignored path="Project.iws" />
@@ -28,7 +27,7 @@
         <entry file="file://$PROJECT_DIR$/data_understanding.ipynb">
           <provider selected="true" editor-type-id="ipnb-editor">
             <state>
-              <selected id="28" />
+              <selected id="12" />
             </state>
           </provider>
         </entry>
@@ -98,6 +97,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -128,7 +128,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="Scope" />
     </panes>
   </component>
@@ -332,7 +331,7 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="65" y="24" width="1301" height="744" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.106072254" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -369,34 +368,10 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$PROJECT_DIR$/data_understanding.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -419,13 +394,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$USER_HOME$/Documents/Amazon task/house_price_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -455,13 +424,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$USER_HOME$/Documents/Amazon task/house_price_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -491,13 +454,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$USER_HOME$/Documents/Amazon task/house_price_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
@@ -527,13 +484,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$USER_HOME$/Documents/Amazon task/house_price_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -563,13 +514,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$USER_HOME$/Documents/Amazon task/house_price_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -591,13 +536,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$PROJECT_DIR$/data_understanding.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
@@ -605,13 +544,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$USER_HOME$/Documents/Amazon task/house_price_prediction.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -640,13 +573,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="-1" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$PROJECT_DIR$/data_understanding.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
@@ -682,17 +609,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb">
-      <provider selected="true" editor-type-id="ipnb-editor">
-        <state>
-          <selected id="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/../Data Understanding/titanic_data_understanding.ipynb" />
     <entry file="file://$PROJECT_DIR$/data_understanding.ipynb">
       <provider selected="true" editor-type-id="ipnb-editor">
         <state>
-          <selected id="28" />
+          <selected id="12" />
         </state>
       </provider>
     </entry>
