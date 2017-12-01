@@ -1,0 +1,5 @@
+['0_SL', '6_NP', '0_WA'] -> 1_L, lift = 377.928, confidence = 89.978
+['0_SL', '6_NP', '0_PL5'] -> 1_L, lift = 372.332, confidence = 88.6458
+['0_SL', '6_NP'] -> 1_L, lift = 370.175, confidence = 88.1321
+['120_AMH', '40_SL', '2_NP', '2_to_3_TSC', '0_PL5'] -> 1_L, lift = 343.124, confidence = 81.6919
+['120_AMH', '40_SL', '2_NP', '2_to_3_TSC'] -> 1_L, lift = 341.695, confidence = 81.3517

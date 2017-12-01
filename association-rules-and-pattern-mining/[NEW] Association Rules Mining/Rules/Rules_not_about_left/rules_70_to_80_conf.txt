@@ -1,0 +1,15 @@
+['2_NP', '0_PL5'] -> 2_to_3_TSC, lift = 123.776, confidence = 79.9398
+['50_LE', '0_WA', '0_PL5'] -> 2_to_3_TSC, lift = 121.956, confidence = 78.7644
+['50_LE', '0_WA'] -> 2_to_3_TSC, lift = 121.518, confidence = 78.4816
+['50_LE', '0_PL5'] -> 2_to_3_TSC, lift = 120.111, confidence = 77.5726
+['2_NP', '0_L', '0_PL5'] -> 2_to_3_TSC, lift = 115.764, confidence = 74.7652
+['2_NP', '0_L'] -> 2_to_3_TSC, lift = 114.741, confidence = 74.1049
+['low', '0_L', '0_PL5'] -> 2_to_3_TSC, lift = 112.357, confidence = 72.5648
+['low', '0_L'] -> 2_to_3_TSC, lift = 112.094, confidence = 72.395
+['0_L', '0_WA', '0_PL5'] -> 2_to_3_TSC, lift = 110.001, confidence = 71.0435
+['4_NP', '0_L', '0_WA', '0_PL5'] -> 2_to_3_TSC, lift = 109.588, confidence = 70.7767
+['0_L', '0_PL5'] -> 2_to_3_TSC, lift = 109.574, confidence = 70.7674
+['0_L', '0_WA'] -> 2_to_3_TSC, lift = 109.542, confidence = 70.7467
+['4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 109.383, confidence = 70.644
+['4_NP', '0_L', '0_PL5'] -> 2_to_3_TSC, lift = 109.287, confidence = 70.5823
+['4_NP', '0_L'] -> 2_to_3_TSC, lift = 109.134, confidence = 70.4832
