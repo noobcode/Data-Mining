@@ -1,0 +1,7 @@
+\BOOKMARK [0][-]{chapter.1}{Analisi dei cluster}{}% 1
+\BOOKMARK [1][-]{section.1.1}{clustering via K-means}{chapter.1}% 2
+\BOOKMARK [2][-]{subsection.1.1.1}{Scelta degli attributi e della funzione distanza}{section.1.1}% 3
+\BOOKMARK [2][-]{subsection.1.1.2}{Identificazione del miglior valore di k}{section.1.1}% 4
+\BOOKMARK [2][-]{subsection.1.1.3}{Caratterizzazione dei clusters ottenuti}{section.1.1}% 5
+\BOOKMARK [2][-]{subsection.1.1.4}{Visualizzazione del clustering via Principal Component Analysis}{section.1.1}% 6
+\BOOKMARK [1][-]{section.1.2}{Clustering via DBSCAN}{chapter.1}% 7
