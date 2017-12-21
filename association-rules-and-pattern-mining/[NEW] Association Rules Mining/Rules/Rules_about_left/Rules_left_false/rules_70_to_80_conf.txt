@@ -1,24 +1,10 @@
-['medium', '0_PL5'] -> 0_L, lift = 103.762, confidence = 79.0583
 ['70_LE', '0_WA'] -> 0_L, lift = 103.409, confidence = 78.7893
-['low', '2_to_3_TSC', '0_PL5'] -> 0_L, lift = 103.359, confidence = 78.7511
-['low', '2_to_3_TSC'] -> 0_L, lift = 103.29, confidence = 78.6982
-['70_LE', '0_WA', '0_PL5'] -> 0_L, lift = 102.923, confidence = 78.4192
+['low_SAL', '2_to_3_TSC'] -> 0_L, lift = 103.29, confidence = 78.6982
 ['50_LE', '0_WA'] -> 0_L, lift = 102.237, confidence = 77.8959
-['50_LE', '0_WA', '0_PL5'] -> 0_L, lift = 101.836, confidence = 77.5908
-['medium', '0_WA'] -> 0_L, lift = 101.634, confidence = 77.4369
-['medium', '0_WA', '0_PL5'] -> 0_L, lift = 100.971, confidence = 76.9317
+['medium_SAL', '0_WA'] -> 0_L, lift = 101.634, confidence = 77.4369
+['high_SAT', '4_NP'] -> 0_L, lift = 100.715, confidence = 76.7364
 ['50_LE', '2_to_3_TSC'] -> 0_L, lift = 100.104, confidence = 76.2712
-['low', '2_to_3_TSC', '0_WA', '0_PL5'] -> 0_L, lift = 99.8967, confidence = 76.1131
-['50_LE', '2_to_3_TSC', '0_PL5'] -> 0_L, lift = 99.8708, confidence = 76.0933
-['low', '2_to_3_TSC', '0_WA'] -> 0_L, lift = 99.854, confidence = 76.0805
-['sales', '0_PL5'] -> 0_L, lift = 98.5333, confidence = 75.0743
-['2_NP', '0_PL5'] -> 0_L, lift = 97.4116, confidence = 74.2196
+['low_SAL', '2_to_3_TSC', '0_WA'] -> 0_L, lift = 99.854, confidence = 76.0805
 ['50_LE', '2_to_3_TSC', '0_WA'] -> 0_L, lift = 96.8216, confidence = 73.77
-['50_LE', '2_to_3_TSC', '0_WA', '0_PL5'] -> 0_L, lift = 96.4895, confidence = 73.517
-['0_WA', '0_PL5'] -> 0_L, lift = 95.9307, confidence = 73.0913
 ['sales', '0_WA'] -> 0_L, lift = 95.4899, confidence = 72.7554
-['sales', '0_WA', '0_PL5'] -> 0_L, lift = 94.8738, confidence = 72.286
 ['2_NP', '0_WA'] -> 0_L, lift = 93.9764, confidence = 71.6023
-['2_NP', '0_WA', '0_PL5'] -> 0_L, lift = 93.5338, confidence = 71.265
-['40_SL', '0_PL5'] -> 0_L, lift = 93.3979, confidence = 71.1615
-['low', '0_PL5'] -> 0_L, lift = 92.1812, confidence = 70.2345

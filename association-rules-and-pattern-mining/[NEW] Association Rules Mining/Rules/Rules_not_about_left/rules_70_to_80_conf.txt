@@ -1,15 +1,345 @@
-['2_NP', '0_PL5'] -> 2_to_3_TSC, lift = 123.776, confidence = 79.9398
-['50_LE', '0_WA', '0_PL5'] -> 2_to_3_TSC, lift = 121.956, confidence = 78.7644
+['very_low_SAT', '4_to_6_TSC', '70_LE'] -> 6_NP, lift = 764.086, confidence = 72.8477
+['very_low_SAT', '4_to_6_TSC', 'low_SAL'] -> 6_NP, lift = 742.083, confidence = 70.75
+['6_NP', 'low_SAL'] -> very_low_SAT, lift = 663.809, confidence = 76.9627
+['6_NP', '0_WA'] -> very_low_SAT, lift = 644.878, confidence = 74.7678
+['120_AMH', '50_LE', '2_NP', '2_to_3_TSC'] -> low_SAT, lift = 420.167, confidence = 79.669
+['30_LE', '2_NP', '2_to_3_TSC', '0_WA'] -> low_SAT, lift = 418.83, confidence = 79.4155
+['120_AMH', '50_LE', '2_NP', '0_WA'] -> low_SAT, lift = 415.006, confidence = 78.6905
+['120_AMH', '2_NP', 'low_SAL', '2_to_3_TSC'] -> low_SAT, lift = 411.73, confidence = 78.0691
+['30_LE', '2_NP', '2_to_3_TSC'] -> low_SAT, lift = 409.318, confidence = 77.6119
+['120_AMH', '2_NP', '2_to_3_TSC', '0_WA'] -> low_SAT, lift = 404.0, confidence = 76.6035
+['120_AMH', '2_NP', 'low_SAL', '0_WA'] -> low_SAT, lift = 403.0, confidence = 76.414
+['120_AMH', '50_LE', '2_NP'] -> low_SAT, lift = 397.121, confidence = 75.2992
+['120_AMH', '2_NP', '2_to_3_TSC'] -> low_SAT, lift = 391.746, confidence = 74.28
+['120_AMH', '2_NP', 'low_SAL'] -> low_SAT, lift = 385.644, confidence = 73.123
+['30_LE', '2_NP', '0_WA'] -> low_SAT, lift = 377.849, confidence = 71.645
+['120_AMH', '2_NP', '0_WA'] -> low_SAT, lift = 376.956, confidence = 71.4756
+['1_L', '4_to_6_TSC', '4_NP', '0_WA'] -> high_SAT, lift = 223.81, confidence = 78.8313
+['1_L', '4_to_6_TSC', '4_NP'] -> high_SAT, lift = 223.705, confidence = 78.7942
+['1_L', '4_NP'] -> high_SAT, lift = 213.281, confidence = 75.1224
+['1_L', '4_NP', '0_WA'] -> high_SAT, lift = 213.007, confidence = 75.0259
+['90_LE', '4_to_6_TSC', '4_NP', '0_WA'] -> high_SAT, lift = 199.63, confidence = 70.3145
+['low_SAT', 'low_SAL'] -> 2_NP, lift = 185.483, confidence = 79.6764
+['low_SAT', 'sales'] -> 2_NP, lift = 184.54, confidence = 79.2714
+['120_AMH', '50_LE', '2_to_3_TSC'] -> 2_NP, lift = 182.188, confidence = 78.2609
+['120_AMH', 'low_SAL', '2_to_3_TSC', '0_WA'] -> 2_NP, lift = 180.75, confidence = 77.6435
+['low_SAT', '0_WA'] -> 2_NP, lift = 180.557, confidence = 77.5606
+['30_LE', '2_to_3_TSC', '0_WA'] -> 2_NP, lift = 178.393, confidence = 76.631
+['30_LE', '2_to_3_TSC'] -> 2_NP, lift = 176.624, confidence = 75.8711
+['120_AMH', 'low_SAL', '2_to_3_TSC'] -> 2_NP, lift = 176.118, confidence = 75.6537
+['low_SAT', 'medium_SAL', '0_WA'] -> 2_NP, lift = 174.945, confidence = 75.1497
+['120_AMH', '50_LE', '0_WA'] -> 2_NP, lift = 173.82, confidence = 74.6667
+['low_SAT', 'medium_SAL'] -> 2_NP, lift = 173.04, confidence = 74.3316
+['120_AMH', '2_to_3_TSC', '0_WA'] -> 2_NP, lift = 172.46, confidence = 74.0821
+['120_AMH', '50_LE'] -> 2_NP, lift = 169.524, confidence = 72.8209
+['120_AMH', '2_to_3_TSC'] -> 2_NP, lift = 167.986, confidence = 72.1605
+['120_AMH', 'low_SAL', '0_WA'] -> 2_NP, lift = 167.347, confidence = 71.8858
+['4_to_6_TSC', 'high_SAT', 'low_SAL', '0_WA'] -> 4_NP, lift = 167.14, confidence = 79.408
+['120_AMH', 'medium_SAL', '2_to_3_TSC', '0_WA'] -> 2_NP, lift = 163.751, confidence = 70.3412
+['4_to_6_TSC', 'high_SAT', 'low_SAL'] -> 4_NP, lift = 163.518, confidence = 77.6869
+['4_to_6_TSC', 'high_SAT', '0_WA'] -> 4_NP, lift = 161.587, confidence = 76.7698
+['4_to_6_TSC', 'high_SAT'] -> 4_NP, lift = 157.482, confidence = 74.8193
+['90_LE', 'high_SAT', '0_WA'] -> 4_NP, lift = 152.135, confidence = 72.2789
+['90_LE', 'high_SAT'] -> 4_NP, lift = 149.754, confidence = 71.148
+['240_AMH', 'high_SAT', '0_WA'] -> 4_NP, lift = 149.62, confidence = 71.0843
+['210_AMH', 'high_SAT', '0_WA'] -> 4_NP, lift = 147.548, confidence = 70.1
+['50_LE', 'low_SAL'] -> 2_to_3_TSC, lift = 123.704, confidence = 79.8934
+['150_AMH', 'low_SAL', '0_WA'] -> 2_to_3_TSC, lift = 123.696, confidence = 79.8883
+['high_SAT', '50_LE', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 123.601, confidence = 79.8267
+['high_SAT', '4_NP', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 123.519, confidence = 79.7741
+['technical', '50_LE', '0_WA'] -> 2_to_3_TSC, lift = 123.373, confidence = 79.6798
+['high_SAT', '50_LE', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 123.255, confidence = 79.6034
+['high_SAT', '50_LE', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 123.226, confidence = 79.5844
+['high_SAT', '4_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 123.162, confidence = 79.5435
+['150_AMH', 'sales'] -> 2_to_3_TSC, lift = 123.152, confidence = 79.5371
+['medium_SAT', '50_LE', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 123.144, confidence = 79.5314
+['medium_SAT', '50_LE', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 123.09, confidence = 79.4969
+['support', '50_LE'] -> 2_to_3_TSC, lift = 122.836, confidence = 79.3325
+['150_AMH', 'low_SAL'] -> 2_to_3_TSC, lift = 122.765, confidence = 79.2867
+['medium_SAT', '50_LE', '2_NP'] -> 2_to_3_TSC, lift = 122.745, confidence = 79.274
+['150_AMH', 'high_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 122.729, confidence = 79.2638
+['high_SAT', '50_LE', '0_WA'] -> 2_to_3_TSC, lift = 122.615, confidence = 79.1899
+['high_SAT', '50_LE', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 122.506, confidence = 79.1198
+['150_AMH', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 122.5, confidence = 79.1157
+['medium_SAT', '50_LE', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 122.4, confidence = 79.0514
+['150_AMH', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 122.342, confidence = 79.0136
+['120_AMH', 'medium_SAL'] -> 2_to_3_TSC, lift = 122.308, confidence = 78.9916
+['sales', '2_NP', '0_WA'] -> 2_to_3_TSC, lift = 122.308, confidence = 78.9916
+['technical', '50_LE'] -> 2_to_3_TSC, lift = 122.265, confidence = 78.9641
+['high_SAT', '50_LE', '4_NP'] -> 2_to_3_TSC, lift = 122.206, confidence = 78.926
+['2_NP', 'medium_SAL', '0_WA'] -> 2_to_3_TSC, lift = 122.198, confidence = 78.9205
+['medium_SAT', '50_LE', 'low_SAL'] -> 2_to_3_TSC, lift = 122.111, confidence = 78.8647
+['150_AMH', '2_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 122.072, confidence = 78.8396
+['medium_SAT', '50_LE', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 121.958, confidence = 78.7654
+['medium_SAT', '50_LE', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 121.854, confidence = 78.6988
+['sales', '2_NP'] -> 2_to_3_TSC, lift = 121.847, confidence = 78.694
+['150_AMH', '50_LE', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 121.768, confidence = 78.6432
+['medium_SAT', '2_NP', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 121.757, confidence = 78.6358
+['150_AMH', 'high_SAT', '0_WA'] -> 2_to_3_TSC, lift = 121.657, confidence = 78.5714
+['medium_SAT', '50_LE', '0_L'] -> 2_to_3_TSC, lift = 121.651, confidence = 78.5675
+['sales', '50_LE', '0_WA'] -> 2_to_3_TSC, lift = 121.551, confidence = 78.5026
 ['50_LE', '0_WA'] -> 2_to_3_TSC, lift = 121.518, confidence = 78.4816
-['50_LE', '0_PL5'] -> 2_to_3_TSC, lift = 120.111, confidence = 77.5726
-['2_NP', '0_L', '0_PL5'] -> 2_to_3_TSC, lift = 115.764, confidence = 74.7652
+['medium_SAT', '4_NP', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 121.515, confidence = 78.4797
+['high_SAT', '50_LE', '0_L'] -> 2_to_3_TSC, lift = 121.465, confidence = 78.4473
+['low_SAT', 'medium_SAL', '0_WA'] -> 2_to_3_TSC, lift = 121.458, confidence = 78.4431
+['150_AMH', 'high_SAT'] -> 2_to_3_TSC, lift = 121.428, confidence = 78.4232
+['medium_SAT', '70_LE', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 121.159, confidence = 78.2497
+['2_NP', 'medium_SAL'] -> 2_to_3_TSC, lift = 121.12, confidence = 78.2246
+['medium_SAT', '2_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 121.084, confidence = 78.2011
+['50_LE', '2_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 121.041, confidence = 78.1736
+['medium_SAT', '50_LE', '0_WA'] -> 2_to_3_TSC, lift = 121.007, confidence = 78.1513
+['high_SAT', '50_LE'] -> 2_to_3_TSC, lift = 120.96, confidence = 78.1214
+['150_AMH', 'medium_SAT', '0_L'] -> 2_to_3_TSC, lift = 120.946, confidence = 78.1124
+['medium_SAT', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 120.913, confidence = 78.0909
+['medium_SAT', '4_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 120.861, confidence = 78.0572
+['high_SAT', '2_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 120.848, confidence = 78.0488
+['medium_SAT', '50_LE', '4_NP'] -> 2_to_3_TSC, lift = 120.801, confidence = 78.0186
+['150_AMH', '50_LE', '0_L'] -> 2_to_3_TSC, lift = 120.772, confidence = 78.0
+['50_LE', '2_NP', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 120.714, confidence = 77.9621
+['high_SAT', '2_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 120.642, confidence = 77.9156
+['high_SAT', '2_NP', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 120.549, confidence = 77.8555
+['high_SAT', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 120.51, confidence = 77.8308
+['high_SAT', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 120.445, confidence = 77.7886
+['medium_SAT', '50_LE'] -> 2_to_3_TSC, lift = 120.438, confidence = 77.7838
+['150_AMH', 'medium_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 120.428, confidence = 77.7778
+['medium_SAT', '50_LE', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 120.387, confidence = 77.7512
+['sales', '50_LE'] -> 2_to_3_TSC, lift = 120.374, confidence = 77.7425
+['50_LE', '4_NP', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 120.348, confidence = 77.7257
+['technical', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 120.345, confidence = 77.724
+['50_LE', '2_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 120.328, confidence = 77.713
+['medium_SAT', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 120.251, confidence = 77.6631
+['150_AMH', '0_WA'] -> 2_to_3_TSC, lift = 120.244, confidence = 77.6587
+['240_AMH', 'medium_SAT', '0_L'] -> 2_to_3_TSC, lift = 120.213, confidence = 77.6385
+['50_LE', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 120.2, confidence = 77.6302
+['low_SAT', 'medium_SAL'] -> 2_to_3_TSC, lift = 120.198, confidence = 77.6292
+['high_SAT', '2_NP', 'medium_SAL'] -> 2_to_3_TSC, lift = 120.132, confidence = 77.5862
+['210_AMH', 'medium_SAT', '0_L'] -> 2_to_3_TSC, lift = 119.924, confidence = 77.4521
+['high_SAT', '50_LE', 'medium_SAL'] -> 2_to_3_TSC, lift = 119.86, confidence = 77.4108
+['high_SAT', '50_LE', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 119.787, confidence = 77.3635
+['240_AMH', 'medium_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 119.779, confidence = 77.3585
+['high_SAT', '2_NP', '0_WA'] -> 2_to_3_TSC, lift = 119.651, confidence = 77.2757
+['technical', '50_LE', '0_L'] -> 2_to_3_TSC, lift = 119.555, confidence = 77.2135
+['high_SAT', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 119.448, confidence = 77.1444
+['high_SAT', '2_NP', 'low_SAL'] -> 2_to_3_TSC, lift = 119.279, confidence = 77.0352
+['30_LE', 'low_SAL'] -> 2_to_3_TSC, lift = 119.258, confidence = 77.0218
+['medium_SAT', '50_LE', 'medium_SAL'] -> 2_to_3_TSC, lift = 119.147, confidence = 76.9504
+['210_AMH', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 119.105, confidence = 76.9231
+['high_SAT', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 119.082, confidence = 76.9084
+['70_LE', 'high_SAT', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 119.043, confidence = 76.8828
+['50_LE', 'medium_SAL', '0_WA'] -> 2_to_3_TSC, lift = 118.906, confidence = 76.7947
+['50_LE', '4_NP', 'low_SAL', '0_WA'] -> 2_to_3_TSC, lift = 118.795, confidence = 76.7232
+['180_AMH', 'medium_SAT', '0_L'] -> 2_to_3_TSC, lift = 118.74, confidence = 76.6871
+['medium_SAT', '70_LE', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 118.708, confidence = 76.6667
+['medium_SAT', '2_NP', 'low_SAL', '0_WA'] -> 2_to_3_TSC, lift = 118.562, confidence = 76.5721
+['technical', 'medium_SAT'] -> 2_to_3_TSC, lift = 118.552, confidence = 76.5659
+['medium_SAT', '2_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 118.513, confidence = 76.5411
+['high_SAT', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 118.483, confidence = 76.5217
+['high_SAT', '2_NP'] -> 2_to_3_TSC, lift = 118.482, confidence = 76.5208
+['medium_SAT', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 118.468, confidence = 76.512
+['medium_SAT', '2_NP', 'low_SAL'] -> 2_to_3_TSC, lift = 118.46, confidence = 76.5066
+['medium_SAT', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 118.415, confidence = 76.4774
+['50_LE', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 118.364, confidence = 76.4447
+['medium_SAT', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 118.289, confidence = 76.3961
+['150_AMH', 'medium_SAL', '0_WA'] -> 2_to_3_TSC, lift = 118.257, confidence = 76.3757
+['high_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 118.252, confidence = 76.372
+['150_AMH', 'medium_SAT'] -> 2_to_3_TSC, lift = 118.236, confidence = 76.3619
+['240_AMH', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 118.236, confidence = 76.3617
+['technical', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 118.085, confidence = 76.2646
+['180_AMH', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 118.056, confidence = 76.2457
+['90_LE', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 118.006, confidence = 76.2136
+['1_WA', 'medium_SAT', '0_L'] -> 2_to_3_TSC, lift = 117.971, confidence = 76.1905
+['50_LE', '4_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 117.778, confidence = 76.0659
+['70_LE', 'high_SAT', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.683, confidence = 76.005
+['medium_SAT', 'medium_SAL', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 117.681, confidence = 76.0034
+['180_AMH', 'medium_SAT'] -> 2_to_3_TSC, lift = 117.651, confidence = 75.9839
+['1_WA', 'medium_SAT'] -> 2_to_3_TSC, lift = 117.595, confidence = 75.9479
+['240_AMH', 'high_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.595, confidence = 75.9477
+['sales', '2_NP', 'medium_SAL'] -> 2_to_3_TSC, lift = 117.587, confidence = 75.9428
+['high_SAT', 'medium_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.578, confidence = 75.9371
+['150_AMH', 'medium_SAL'] -> 2_to_3_TSC, lift = 117.566, confidence = 75.9289
+['180_AMH', 'medium_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.482, confidence = 75.875
+['medium_SAT', '70_LE', '0_L'] -> 2_to_3_TSC, lift = 117.443, confidence = 75.8499
+['50_LE', 'medium_SAL'] -> 2_to_3_TSC, lift = 117.381, confidence = 75.8099
+['90_LE', 'medium_SAT', '0_L'] -> 2_to_3_TSC, lift = 117.379, confidence = 75.8082
+['high_SAT', '0_L'] -> 2_to_3_TSC, lift = 117.346, confidence = 75.7874
+['medium_SAT', '0_L'] -> 2_to_3_TSC, lift = 117.32, confidence = 75.7702
+['medium_SAT', '70_LE', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.264, confidence = 75.7344
+['medium_SAT', 'medium_SAL', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.22, confidence = 75.7056
+['medium_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.182, confidence = 75.6811
+['150_AMH', 'medium_SAT', '0_WA'] -> 2_to_3_TSC, lift = 117.173, confidence = 75.6757
+['30_LE', '0_WA'] -> 2_to_3_TSC, lift = 117.096, confidence = 75.6259
+['180_AMH', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.089, confidence = 75.6213
+['70_LE', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 117.069, confidence = 75.6083
+['70_LE', 'high_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 117.042, confidence = 75.5906
+['medium_SAT', '2_NP'] -> 2_to_3_TSC, lift = 117.016, confidence = 75.5739
+['2_NP', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 116.995, confidence = 75.5607
+['210_AMH', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 116.906, confidence = 75.503
+['150_AMH', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 116.842, confidence = 75.4615
+['medium_SAT', '2_NP', '0_WA'] -> 2_to_3_TSC, lift = 116.752, confidence = 75.4035
+['150_AMH', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 116.723, confidence = 75.3846
+['50_LE', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 116.642, confidence = 75.3327
+['180_AMH', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 116.597, confidence = 75.3036
+['medium_SAT', '70_LE', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 116.544, confidence = 75.2688
+['180_AMH', '50_LE', '0_L'] -> 2_to_3_TSC, lift = 116.395, confidence = 75.1732
+['240_AMH', '50_LE', '0_L'] -> 2_to_3_TSC, lift = 116.383, confidence = 75.1651
+['180_AMH', 'medium_SAT', '0_WA'] -> 2_to_3_TSC, lift = 116.318, confidence = 75.1232
+['210_AMH', '2_NP'] -> 2_to_3_TSC, lift = 116.217, confidence = 75.058
+['support', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 116.127, confidence = 75.0
+['2_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 116.055, confidence = 74.9531
+['180_AMH', 'high_SAT'] -> 2_to_3_TSC, lift = 116.039, confidence = 74.9431
+['50_LE', '4_NP', 'low_SAL'] -> 2_to_3_TSC, lift = 116.019, confidence = 74.9298
+['technical', 'medium_SAT', '0_WA'] -> 2_to_3_TSC, lift = 115.926, confidence = 74.8698
+['support', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 115.9, confidence = 74.8529
+['180_AMH', '2_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 115.891, confidence = 74.8474
+['support', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 115.732, confidence = 74.7449
+['medium_SAT', '2_NP', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 115.679, confidence = 74.7102
+['high_SAT', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 115.625, confidence = 74.6753
+['sales', 'high_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 115.611, confidence = 74.6667
+['medium_SAT', '2_NP', 'medium_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 115.585, confidence = 74.6497
+['high_SAT', 'medium_SAL', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 115.537, confidence = 74.6187
+['medium_SAT', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 115.381, confidence = 74.5179
+['2_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 115.323, confidence = 74.4805
+['1_WA', '2_NP'] -> 2_to_3_TSC, lift = 115.297, confidence = 74.4635
+['240_AMH', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 115.273, confidence = 74.4479
+['sales', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 115.238, confidence = 74.426
+['210_AMH', 'medium_SAT'] -> 2_to_3_TSC, lift = 115.173, confidence = 74.3837
+['50_LE', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 115.082, confidence = 74.3247
+['240_AMH', '50_LE'] -> 2_to_3_TSC, lift = 115.033, confidence = 74.2931
+['180_AMH', 'low_SAL', '0_WA'] -> 2_to_3_TSC, lift = 115.016, confidence = 74.2824
+['240_AMH', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 115.016, confidence = 74.282
+['medium_SAT', '2_NP', 'medium_SAL'] -> 2_to_3_TSC, lift = 114.998, confidence = 74.2708
+['medium_SAT', 'medium_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 114.98, confidence = 74.2591
+['240_AMH', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 114.965, confidence = 74.2496
+['180_AMH', '50_LE'] -> 2_to_3_TSC, lift = 114.941, confidence = 74.2338
+['90_LE', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 114.891, confidence = 74.2015
+['180_AMH', '2_NP'] -> 2_to_3_TSC, lift = 114.864, confidence = 74.184
+['sales', 'medium_SAT', '0_L'] -> 2_to_3_TSC, lift = 114.797, confidence = 74.1406
+['medium_SAT', '2_NP', 'medium_SAL', '0_WA'] -> 2_to_3_TSC, lift = 114.766, confidence = 74.1206
 ['2_NP', '0_L'] -> 2_to_3_TSC, lift = 114.741, confidence = 74.1049
-['low', '0_L', '0_PL5'] -> 2_to_3_TSC, lift = 112.357, confidence = 72.5648
-['low', '0_L'] -> 2_to_3_TSC, lift = 112.094, confidence = 72.395
-['0_L', '0_WA', '0_PL5'] -> 2_to_3_TSC, lift = 110.001, confidence = 71.0435
-['4_NP', '0_L', '0_WA', '0_PL5'] -> 2_to_3_TSC, lift = 109.588, confidence = 70.7767
-['0_L', '0_PL5'] -> 2_to_3_TSC, lift = 109.574, confidence = 70.7674
+['50_LE', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 114.703, confidence = 74.0799
+['sales', 'medium_SAT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 114.672, confidence = 74.0602
+['180_AMH', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 114.66, confidence = 74.0525
+['medium_SAT', 'low_SAL'] -> 2_to_3_TSC, lift = 114.593, confidence = 74.0088
+['2_NP', 'medium_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 114.553, confidence = 73.9833
+['medium_SAT', '70_LE', 'low_SAL'] -> 2_to_3_TSC, lift = 114.452, confidence = 73.9183
+['sales', '50_LE', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 114.444, confidence = 73.913
+['support', '0_L'] -> 2_to_3_TSC, lift = 114.324, confidence = 73.8351
+['240_AMH', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 114.284, confidence = 73.8095
+['150_AMH', '0_L'] -> 2_to_3_TSC, lift = 114.281, confidence = 73.8075
+['210_AMH', 'medium_SAT', '0_WA'] -> 2_to_3_TSC, lift = 114.184, confidence = 73.7452
+['technical', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 114.18, confidence = 73.7425
+['150_AMH', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 114.147, confidence = 73.7212
+['technical', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 114.1, confidence = 73.6906
+['medium_SAT', 'low_SAL', '0_WA'] -> 2_to_3_TSC, lift = 114.086, confidence = 73.6814
+['2_NP', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 114.079, confidence = 73.6769
+['high_SAT', 'medium_SAL', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 114.06, confidence = 73.6652
+['240_AMH', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 113.933, confidence = 73.5826
+['50_LE', '0_L'] -> 2_to_3_TSC, lift = 113.829, confidence = 73.5159
+['180_AMH', '2_NP', '0_WA'] -> 2_to_3_TSC, lift = 113.829, confidence = 73.5154
+['70_LE', 'high_SAT', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 113.827, confidence = 73.5142
+['4_NP', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 113.782, confidence = 73.4855
+['sales', '50_LE', '0_L'] -> 2_to_3_TSC, lift = 113.762, confidence = 73.4727
+['70_LE', '2_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 113.708, confidence = 73.4375
+['50_LE', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 113.668, confidence = 73.4119
+['210_AMH', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 113.634, confidence = 73.3897
+['210_AMH', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 113.555, confidence = 73.339
+['210_AMH', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 113.547, confidence = 73.3333
+['medium_SAT', 'medium_SAL', '4_NP'] -> 2_to_3_TSC, lift = 113.479, confidence = 73.2899
+['210_AMH', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 113.408, confidence = 73.2438
+['50_LE', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 113.308, confidence = 73.1792
+['50_LE', 'medium_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 113.3, confidence = 73.1737
+['4_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 113.291, confidence = 73.1681
+['70_LE', '4_NP', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 113.241, confidence = 73.1358
+['medium_SAT', '70_LE'] -> 2_to_3_TSC, lift = 113.08, confidence = 73.0318
+['210_AMH', '70_LE', '0_L'] -> 2_to_3_TSC, lift = 113.058, confidence = 73.0179
+['1_WA', 'high_SAT', '0_L'] -> 2_to_3_TSC, lift = 113.042, confidence = 73.0077
+['technical', '0_L'] -> 2_to_3_TSC, lift = 112.97, confidence = 72.9609
+['medium_SAT', '70_LE', '4_NP'] -> 2_to_3_TSC, lift = 112.952, confidence = 72.9492
+['low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 112.947, confidence = 72.9459
+['support', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 112.906, confidence = 72.9194
+['medium_SAT', '4_NP', 'low_SAL'] -> 2_to_3_TSC, lift = 112.868, confidence = 72.8949
+['240_AMH', '2_NP'] -> 2_to_3_TSC, lift = 112.822, confidence = 72.8655
+['180_AMH', 'low_SAL'] -> 2_to_3_TSC, lift = 112.795, confidence = 72.8477
+['150_AMH', 'medium_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 112.784, confidence = 72.8409
+['medium_SAT', '4_NP'] -> 2_to_3_TSC, lift = 112.763, confidence = 72.8273
+['70_LE', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 112.762, confidence = 72.8267
+['medium_SAT', '0_WA'] -> 2_to_3_TSC, lift = 112.662, confidence = 72.7621
+['70_LE', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 112.66, confidence = 72.7605
+['medium_SAT', 'medium_SAL'] -> 2_to_3_TSC, lift = 112.64, confidence = 72.7474
+['210_AMH', '50_LE'] -> 2_to_3_TSC, lift = 112.591, confidence = 72.7162
+['sales', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 112.56, confidence = 72.696
+['medium_SAT', 'medium_SAL', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 112.501, confidence = 72.6577
+['technical', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 112.407, confidence = 72.597
+['150_AMH', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 112.367, confidence = 72.5714
+['90_LE', '2_NP'] -> 2_to_3_TSC, lift = 112.325, confidence = 72.5444
+['240_AMH', '0_L'] -> 2_to_3_TSC, lift = 112.24, confidence = 72.4897
+['50_LE', '4_NP'] -> 2_to_3_TSC, lift = 112.237, confidence = 72.4872
+['sales', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 112.18, confidence = 72.4505
+['70_LE', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 112.119, confidence = 72.4115
+['50_LE', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 112.117, confidence = 72.4103
+['low_SAL', '0_L'] -> 2_to_3_TSC, lift = 112.094, confidence = 72.395
+['1_WA', '2_NP', '0_L'] -> 2_to_3_TSC, lift = 112.067, confidence = 72.3776
+['210_AMH', '50_LE', '0_L'] -> 2_to_3_TSC, lift = 111.997, confidence = 72.3325
+['medium_SAT', '70_LE', 'medium_SAL'] -> 2_to_3_TSC, lift = 111.996, confidence = 72.332
+['240_AMH', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 111.969, confidence = 72.3145
+['70_LE', '2_NP', '0_WA'] -> 2_to_3_TSC, lift = 111.888, confidence = 72.2622
+['medium_SAT', '4_NP', 'low_SAL', '0_WA'] -> 2_to_3_TSC, lift = 111.868, confidence = 72.2493
+['medium_SAT', 'medium_SAL', '0_WA'] -> 2_to_3_TSC, lift = 111.835, confidence = 72.2281
+['sales', 'medium_SAT'] -> 2_to_3_TSC, lift = 111.704, confidence = 72.1434
+['medium_SAT', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 111.683, confidence = 72.1297
+['technical', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 111.662, confidence = 72.1163
+['technical', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 111.635, confidence = 72.0985
+['180_AMH', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 111.589, confidence = 72.0692
+['sales', '2_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 111.58, confidence = 72.0629
+['240_AMH', 'medium_SAT'] -> 2_to_3_TSC, lift = 111.441, confidence = 71.9733
+['medium_SAT', '70_LE', '0_WA'] -> 2_to_3_TSC, lift = 111.361, confidence = 71.9215
+['210_AMH', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 111.189, confidence = 71.8109
+['70_LE', '2_NP'] -> 2_to_3_TSC, lift = 111.188, confidence = 71.8101
+['sales', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 111.102, confidence = 71.7546
+['90_LE', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 111.065, confidence = 71.7305
+['70_LE', '4_NP', 'low_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 111.042, confidence = 71.716
+['50_LE', 'medium_SAL', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 111.015, confidence = 71.6981
+['sales', 'medium_SAT', '0_WA'] -> 2_to_3_TSC, lift = 110.952, confidence = 71.6578
+['240_AMH', '70_LE', '0_L'] -> 2_to_3_TSC, lift = 110.777, confidence = 71.5447
+['210_AMH', '0_L'] -> 2_to_3_TSC, lift = 110.753, confidence = 71.5291
+['50_LE', 'medium_SAL', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 110.649, confidence = 71.4617
+['240_AMH', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 110.641, confidence = 71.4569
+['150_AMH', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 110.597, confidence = 71.4286
+['180_AMH', '0_L'] -> 2_to_3_TSC, lift = 110.519, confidence = 71.3779
+['medium_SAT', '70_LE', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 110.493, confidence = 71.3609
+['240_AMH', 'medium_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 110.467, confidence = 71.3443
+['150_AMH', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 110.408, confidence = 71.306
+['210_AMH', 'medium_SAL', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 110.403, confidence = 71.3033
+['90_LE', 'low_SAL', '0_L'] -> 2_to_3_TSC, lift = 110.383, confidence = 71.2903
+['90_LE', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 110.342, confidence = 71.2633
+['180_AMH', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 110.19, confidence = 71.1656
+['150_AMH', '70_LE', '0_L'] -> 2_to_3_TSC, lift = 110.085, confidence = 71.0976
+['70_LE', '2_NP', 'medium_SAL'] -> 2_to_3_TSC, lift = 110.069, confidence = 71.0875
+['50_LE', 'medium_SAL', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 109.991, confidence = 71.0372
+['180_AMH', '0_WA'] -> 2_to_3_TSC, lift = 109.944, confidence = 71.0069
+['90_LE', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 109.751, confidence = 70.882
+['50_LE', 'medium_SAL', '4_NP'] -> 2_to_3_TSC, lift = 109.701, confidence = 70.8494
+['1_WA', '50_LE'] -> 2_to_3_TSC, lift = 109.692, confidence = 70.8437
+['150_AMH', '4_NP'] -> 2_to_3_TSC, lift = 109.686, confidence = 70.8399
+['150_AMH', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 109.646, confidence = 70.8138
+['240_AMH', 'medium_SAT', '0_WA'] -> 2_to_3_TSC, lift = 109.574, confidence = 70.7675
 ['0_L', '0_WA'] -> 2_to_3_TSC, lift = 109.542, confidence = 70.7467
+['210_AMH', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 109.534, confidence = 70.7419
+['technical', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 109.514, confidence = 70.7291
 ['4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 109.383, confidence = 70.644
-['4_NP', '0_L', '0_PL5'] -> 2_to_3_TSC, lift = 109.287, confidence = 70.5823
+['90_LE', '0_L'] -> 2_to_3_TSC, lift = 109.346, confidence = 70.6201
 ['4_NP', '0_L'] -> 2_to_3_TSC, lift = 109.134, confidence = 70.4832
+['sales', '4_NP', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 109.125, confidence = 70.4776
+['90_LE', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 109.085, confidence = 70.4518
+['IT', '0_L'] -> 2_to_3_TSC, lift = 109.067, confidence = 70.4403
+['180_AMH', '70_LE', '0_L'] -> 2_to_3_TSC, lift = 109.05, confidence = 70.4294
+['70_LE', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 109.015, confidence = 70.4064
+['IT', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 108.909, confidence = 70.3379
+['180_AMH', '4_NP', '0_WA'] -> 2_to_3_TSC, lift = 108.838, confidence = 70.292
+['90_LE', 'medium_SAL', '0_L'] -> 2_to_3_TSC, lift = 108.634, confidence = 70.1604
+['sales', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 108.526, confidence = 70.0906
+['180_AMH', '4_NP', '0_L'] -> 2_to_3_TSC, lift = 108.502, confidence = 70.0754
+['120_AMH', '0_L', '0_WA'] -> 2_to_3_TSC, lift = 108.385, confidence = 70.0
+['support', 'low_SAL', '0_L'] -> 0_WA, lift = 93.2775, confidence = 79.7886
+['70_LE', '4_NP', 'low_SAL', '2_to_3_TSC'] -> 0_WA, lift = 93.0443, confidence = 79.5892
+['70_LE', '4_NP', 'low_SAL', '2_to_3_TSC', '0_L'] -> 0_WA, lift = 92.6076, confidence = 79.2157

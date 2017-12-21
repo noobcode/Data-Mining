@@ -1,5 +1,4 @@
-['2_NP', '2_to_3_TSC', '0_L', '0_WA', '0_PL5'] support = 19.3013
-['50_LE', '2_to_3_TSC', '0_L', '0_WA', '0_PL5'] support = 17.4345
-['60_SL', '2_to_3_TSC', '0_L', '0_WA', '0_PL5'] support = 15.5077
-['70_LE', '2_to_3_TSC', '0_L', '0_WA', '0_PL5'] support = 15.2544
-['4_to_6_TSC', '0_L', '0_WA', '0_PL5'] support = 15.1477
+['2_NP', '2_to_3_TSC', '0_L', '0_WA'] support = 19.5946
+['50_LE', '2_to_3_TSC', '0_L', '0_WA'] support = 17.7945
+['70_LE', '2_to_3_TSC', '0_L', '0_WA'] support = 15.5677
+['4_to_6_TSC', '0_L', '0_WA'] support = 15.4277

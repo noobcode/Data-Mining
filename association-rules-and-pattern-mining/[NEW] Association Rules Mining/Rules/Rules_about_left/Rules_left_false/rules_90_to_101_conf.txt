@@ -1,5 +1,6 @@
-['4_NP', '2_to_3_TSC', '0_PL5'] -> 0_L, lift = 129.518, confidence = 98.6824
+['high_SAT', '2_to_3_TSC'] -> 0_L, lift = 130.326, confidence = 99.2976
+['medium_SAT', '2_to_3_TSC'] -> 0_L, lift = 129.786, confidence = 98.8862
+['medium_SAT', '2_to_3_TSC', '0_WA'] -> 0_L, lift = 129.521, confidence = 98.6842
 ['4_NP', '2_to_3_TSC'] -> 0_L, lift = 129.473, confidence = 98.6474
-['4_NP', '2_to_3_TSC', '0_WA', '0_PL5'] -> 0_L, lift = 129.212, confidence = 98.4485
 ['4_NP', '2_to_3_TSC', '0_WA'] -> 0_L, lift = 129.153, confidence = 98.404
-['60_SL', '0_PL5'] -> 0_L, lift = 118.74, confidence = 90.4704
+['medium_SAT', '0_WA'] -> 0_L, lift = 124.525, confidence = 94.8779
