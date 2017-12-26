@@ -5,3 +5,5 @@
 \BOOKMARK [2][-]{subsection.1.1.3}{Caratterizzazione dei clusters ottenuti}{section.1.1}% 5
 \BOOKMARK [2][-]{subsection.1.1.4}{Visualizzazione del clustering via Principal Component Analysis}{section.1.1}% 6
 \BOOKMARK [1][-]{section.1.2}{Clustering via DBSCAN}{chapter.1}% 7
+\BOOKMARK [2][-]{subsection.1.2.1}{Studio dei parametri minPoints ed epsilon}{section.1.2}% 8
+\BOOKMARK [2][-]{subsection.1.2.2}{Caratterizzazione ed interpretazione dei clusters}{section.1.2}% 9

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.16)  19 DEC 2017 21:53
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.16)  26 DEC 2017 15:41
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -713,7 +713,7 @@ Underfull \hbox (badness 1226) in paragraph at lines 17--22
 \OT1/cmr/m/n/10 quan-ti-tia-ti-vi. L'u-ni-ca ec-ce-zio-ne ^^Re sta-ta fat-ta
  []
 
-<../images/sse_silhouette_vs_k.png, id=29, 433.62pt x 289.08pt>
+<../images/sse_silhouette_vs_k.png, id=41, 433.62pt x 289.08pt>
 File: ../images/sse_silhouette_vs_k.png Graphic file (type png)
 
 <use ../images/sse_silhouette_vs_k.png>
@@ -724,7 +724,7 @@ Package pdftex.def Info: ../images/sse_silhouette_vs_k.png used on input line 3
 
 
  <../images/sse_silhouette_vs_k.png>]
-<../images/k-centroids_analysis.png, id=46, 722.7pt x 722.7pt>
+<../images/k-centroids_analysis.png, id=58, 722.7pt x 722.7pt>
 File: ../images/k-centroids_analysis.png Graphic file (type png)
 
 <use ../images/k-centroids_analysis.png>
@@ -732,7 +732,7 @@ Package pdftex.def Info: ../images/k-centroids_analysis.png used on input line
 51.
 (pdftex.def)             Requested size: 221.0pt x 221.00212pt.
 
-<../images/kde_quantitative_features.png, id=50, 433.62pt x 289.08pt>
+<../images/kde_quantitative_features.png, id=62, 433.62pt x 289.08pt>
 File: ../images/kde_quantitative_features.png Graphic file (type png)
 
 <use ../images/kde_quantitative_features.png>
@@ -740,7 +740,7 @@ Package pdftex.def Info: ../images/kde_quantitative_features.png used on input
 line 68.
 (pdftex.def)             Requested size: 135.60138pt x 90.39902pt.
 
-<../images/kde_within_clusters_c4.png, id=51, 433.62pt x 289.08pt>
+<../images/kde_within_clusters_c4.png, id=63, 433.62pt x 289.08pt>
 File: ../images/kde_within_clusters_c4.png Graphic file (type png)
 
 <use ../images/kde_within_clusters_c4.png>
@@ -748,7 +748,7 @@ Package pdftex.def Info: ../images/kde_within_clusters_c4.png used on input lin
 e 74.
 (pdftex.def)             Requested size: 135.60138pt x 90.39902pt.
 
-<../images/kde_within_clusters_c7.png, id=52, 433.62pt x 289.08pt>
+<../images/kde_within_clusters_c7.png, id=64, 433.62pt x 289.08pt>
 File: ../images/kde_within_clusters_c7.png Graphic file (type png)
 
 <use ../images/kde_within_clusters_c7.png>
@@ -759,48 +759,66 @@ e 80.
 Underfull \vbox (badness 10000) has occurred while \output is active []
 
  [2 <../images/k-centroids_analysis.png>]
-<../images/pca_kmeans.png, id=72, 433.62pt x 289.08pt>
+<../images/pca_kmeans.png, id=84, 433.62pt x 289.08pt>
 File: ../images/pca_kmeans.png Graphic file (type png)
 
 <use ../images/pca_kmeans.png>
 Package pdftex.def Info: ../images/pca_kmeans.png used on input line 93.
 (pdftex.def)             Requested size: 221.0pt x 147.33621pt.
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 101.
  [3 <../images/kde_quantitative_features.png> <../images/kde_within_clusters_c4
 .png> <../images/kde_within_clusters_c7.png> <../images/pca_kmeans.png>]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 101.
+<../images/dbscan_epsilon_selection.png, id=101, 433.62pt x 289.08pt>
+File: ../images/dbscan_epsilon_selection.png Graphic file (type png)
+
+<use ../images/dbscan_epsilon_selection.png>
+Package pdftex.def Info: ../images/dbscan_epsilon_selection.png used on input l
+ine 109.
+(pdftex.def)             Requested size: 221.0pt x 147.33621pt.
+
+<../images/epsilon_vs_silhouette.png, id=105, 433.62pt x 289.08pt>
+File: ../images/epsilon_vs_silhouette.png Graphic file (type png)
+
+<use ../images/epsilon_vs_silhouette.png>
+Package pdftex.def Info: ../images/epsilon_vs_silhouette.png used on input line
+ 119.
+(pdftex.def)             Requested size: 221.0pt x 147.33621pt.
+ [4 <../images/dbscan_epsilon_selection.png> <../images/epsilon_vs_silhouette.p
+ng>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 137.
+ [5
+
+
+]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 137.
  (./report_cluster.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 101.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 101.
-
-
-Package rerunfilecheck Warning: File `report_cluster.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `report_cluster.out':
-(rerunfilecheck)             Before: 7CA96919488F622141CA8230452B8A92;523
-(rerunfilecheck)             After:  5F09021A9B25EFA852927CBDB1BD89F0;590.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 137.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 137.
+Package rerunfilecheck Info: File `report_cluster.out' has not changed.
+(rerunfilecheck)             Checksum: 8345E2BB0C9748BD49349E0D9887F7C7;786.
  ) 
 Here is how much of TeX's memory you used:
- 8230 strings out of 493029
- 119554 string characters out of 6136233
- 229255 words of memory out of 5000000
- 11650 multiletter control sequences out of 15000+600000
- 8069 words of font info for 31 fonts, out of 8000000 for 9000
+ 8278 strings out of 493029
+ 120406 string characters out of 6136233
+ 229900 words of memory out of 5000000
+ 11679 multiletter control sequences out of 15000+600000
+ 11515 words of font info for 44 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,9n,49p,1186b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,49p,1186b,381s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
 ive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist
-/fonts/type1/public/amsfonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmsy10.pfb>
-Output written on report_cluster.pdf (3 pages, 304880 bytes).
+mf-dist/fonts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist
+/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/
+type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
+blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
+fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
+/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti1
+0.pfb>
+Output written on report_cluster.pdf (5 pages, 383350 bytes).
 PDF statistics:
- 115 PDF objects out of 1000 (max. 8388607)
- 87 compressed objects within 1 object stream
- 23 named destinations out of 1000 (max. 500000)
- 79 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 170 PDF objects out of 1000 (max. 8388607)
+ 131 compressed objects within 2 object streams
+ 33 named destinations out of 1000 (max. 500000)
+ 113 words of extra memory for PDF output out of 10000 (max. 10000000)
 

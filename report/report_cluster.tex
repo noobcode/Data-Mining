@@ -22,7 +22,7 @@ L'interpretazione è stata che se $number\_project$ ha valore frazionario $d.f$ 
 \paragraph{}
 La funzione distanza scelta è stata la distanza Euclidea perché i centroidi sono medie nello spazio Euclideo in $\Re^{n}$, dove $n$ è il numero di attributi. [TODO: spiega meglio]
 
-\subsection{Identificazione del miglior valore di k}
+\subsection{Identificazione del miglior valore di k} \label{trovare_valore_di_k}
 Identificare il numero di clusters è importante per trovare un compromesso tra pochi grandi clusters e molti piccoli, e spesso insignificanti, clusters. Per indentificare il miglior valore di $k$ per l'algoritmo K-means si è monitorato l'andamento della $Sum\ of\ Squared\ Error\ (SSE)$ e la $silhouette\ score$ al variare di $k$, il cui grafico è riportato in \autoref{fig:sse_sil_vs_k}. Il grafico della $SSE$ ha un andamento non-crescente e diminuisce in maniera smooth, mentre la silhouette presenta molti picchi.
 
 \begin{figure}[hbtp]
@@ -96,6 +96,42 @@ I risultati ottenuti dal clustering via K-means sono stati combinati con la PCA 
 \end{figure}
 
 \section{Clustering via DBSCAN}
+L'analisi dei cluster con il metodo DBSCAN è stata svolta per identificare clusters con forma arbitraria.
+Con lo scopo di confrontare i risultati ottenuti con K-means, sono stati scelti gli attributi quantitativi e ordinali, e la distanza euclidea per funzione distanza.
 
+\subsection{Studio dei parametri minPoints ed epsilon}
+La scelta dei parametri $minPoints$ ed $\epsilon$ è stata ispirata dal metodo proposto da Ester et Al. in \cite{dbscan}. \autoref{fig:epsilon_selection} riporta il grafico delle distanze di ogni punto dati al $k-esimo$ punto dati più vicino, ordinate in modo decrescente. 
+\footnote{Per visibilità sono riportate soltanto le curve  per $k=4$ e $k=8$. Le curve per valori intermedi di $k$ giacciono tra le due curve mostrate in figura.}
+I grafici, per valori diversi di $k$, avevano la stessa forma, e i valori delle ascisse erano uguali per almeno 7 punti decimali. Inoltre, dal momento che i valori di $minPoints$ ed $\epsilon$ giocano sullo stesso compromesso, l'analisi è stata portata avanti fissando $minPoints=k+1$, escludendo il punto dati stesso dal calcolo dei punti vicini.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=1\columnwidth]{../images/dbscan_epsilon_selection.png}
+\caption{Distanza decrescente al $k-th$ punto più vicino per ogni punto dati. La linea continua rappresenta la curva delle distanze per $k=4$, mentre la linea tratteggiata per $k=8$. Le curve hanno la stessa forma.}
+\label{fig:epsilon_selection}
+\end{figure}
+
+\paragraph{}
+Per la scelta di $\epsilon$, l'idea era quella di trovare il punto di gomito in\autoref{fig:epsilon_selection}. Dalla figura si vede chiaramente che il punto di gomito giace nell'intervallo di valori $\epsilon \in \left[0.1, 0.3\right]$. Usando un metodo analogo utilizzato in \autoref{trovare_valore_di_k}, si è ottenuto come risultato $\epsilon=0.297$ e $silhouette=0.301$. Dal momento che il valore $\epsilon$ ottenuto era ai margini dell'intervallo di valori predetto visualmente, è stata svolta un'indagine più approfondita per scoprire come variava il valore della $silhouette$ al variare di $\epsilon \in \left[0.1, 0.3\right]$. L'intervallo è stato diviso arbitrariamente in 30 punti. L'andamento della $silhouette$ è mostrato in \autoref{fig:epsilon_vs_silhouette}. Il grafico assume un plateau a partire da $\epsilon \cong 0.26$, in cui la $silhouette$ rimane quasi constante. Selezionando $\epsilon=0.26$ si è ottenuto un insieme di due clusters rispettivamente di 14958 e 6 elementi, con valore di $silhouette=0.344$. I rimanenti 35 punti dati sono stati classificati come noise-points. 
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=1\columnwidth]{../images/epsilon_vs_silhouette.png}
+\caption{Andamento della silhouette per epsilon che varia nell'intervallo $\left[0.1,0.3\right]$. Prima di $\epsilon=0.2$ la silhouette è negativa, mentre è presente un grande incremento per $\epsilon \cong 0.225$. Dopo $\epsilon \cong 0.26$ è presente un plateau. Si è scelto $\epsilon = 0.26$, ottenendo $silhouette=0.344$.}
+\label{fig:epsilon_vs_silhouette}
+\end{figure}
+
+\subsection{Caratterizzazione ed interpretazione dei clusters}
+I clustering ottenuti per diversi valori di $\epsilon$ sono stati caratterizzati analizzando la curva in  \autoref{fig:epsilon_vs_silhouette}.
+Nell'intervallo di valori $epsilon \in \left[0.1, 0.2\right]$ (primi 15 punti sulla curva) il numero di clusters formati varia da 105 fino a 12, in cui sono presenti circa 6 clusters di medie dimensioni, e il resto di dimensioni molto piccole. I noise-points variano da 3278 fino a 281. In questo intervallo si ha $silhouette \leq 0$, il che significa che mediamente i punti di un cluster sono più vicini ai punti di un altro cluster, piuttosto che ai punti del cluster di appartenenza, o che sono presenti troppi clusters.
+Nella seconda metà del grafico, per $\epsilon \in \left(0.2, 0.3\right]$ si inizia a formare un unico grande cluster contenente almeno il $97\%$ dei dati, con il rimanente $3\%$ diviso tra pochi piccoli clusters e noise-points. 
+In particolare, nell'intervallo $\left[0.26, 0.3\right)$ la $silhouette$ forma un plateau, e sono presenti solo 2 clusters. 
+Investigando i clusters ottenuti nei punti formanti il plateau si è scoperto che i noise-points gradualemente si uniscono ad uno dei 2 clusters.
+Infine, per $\epsilon=0.3$ alcuni noise-points si uniscono per formare un piccolo cluster, diminuendo la $silhouette$.
+
+\begin{thebibliography}{}
+\bibitem{dbscan} 
+\textit{Ester, Martin, et al. "A density-based algorithm for discovering clusters in large spatial databases with noise." Kdd. Vol. 96. No. 34. 1996.}
+\end{thebibliography}
 
 \end{document}
