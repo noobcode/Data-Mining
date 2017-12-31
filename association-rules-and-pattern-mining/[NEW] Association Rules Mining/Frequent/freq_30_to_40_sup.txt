@@ -1,12 +1,1 @@
-['4_NP', '0_L', '0_PL5'] support = 39.616
-['4_NP', '0_WA', '0_PL5'] support = 39.2893
-['2_NP', '0_WA', '0_PL5'] support = 36.1024
-['medium', '0_WA', '0_PL5'] support = 35.8091
-['low', '0_L', '0_PL5'] support = 33.9489
 ['4_NP', '0_L', '0_WA'] support = 33.7489
-['2_NP', '2_to_3_TSC', '0_PL5'] support = 33.6356
-['medium', '0_L', '0_PL5'] support = 33.0222
-['4_NP', '0_L', '0_WA', '0_PL5'] support = 32.8755
-['low', '2_to_3_TSC', '0_PL5'] support = 31.2821
-['2_NP', '0_L', '0_PL5'] support = 31.2287
-['50_LE', '0_WA', '0_PL5'] support = 30.1087

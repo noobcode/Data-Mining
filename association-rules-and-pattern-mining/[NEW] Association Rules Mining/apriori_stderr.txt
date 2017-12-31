@@ -1,0 +1,8 @@
+./apriori - find frequent item sets with the apriori algorithm
+version 6.27 (2017.08.01)        (c) 1996-2017   Christian Borgelt
+reading hr_for_pattern_mining.csv ... [15039 item(s), 14999 transaction(s)] done [0.01s].
+filtering, sorting and recoding items ... [37 item(s)] done [0.00s].
+sorting and reducing transactions ... [5951/14999 transaction(s)] done [0.00s].
+building transaction tree ... [10339 node(s)] done [0.00s].
+checking subsets of size 1 2 3 4 5 6 7 done [0.02s].
+writing Rules/association_rules.txt ... [1474 rule(s)] done [0.00s].
