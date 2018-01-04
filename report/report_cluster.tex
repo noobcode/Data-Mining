@@ -1,18 +1,20 @@
-\documentclass[10pt,a4paper,twocolumn]{report}
+\documentclass[10pt,a4paper,twocolumn]{article}
 \usepackage[utf8]{inputenc}
 \usepackage[italian]{babel}
 \usepackage{amsmath}
 \usepackage{amsfonts}
 \usepackage{amssymb}
 \usepackage{graphicx}
-\usepackage{hyperref}
+\usepackage[draft]{hyperref}
 \usepackage{subfig}
 \title{Analisi dei clusters}
 \begin{document}
 
-\chapter{Analisi dei cluster}
-\section{clustering via K-means}
-\subsection{Scelta degli attributi e della funzione distanza}
+\section{Analisi dei cluster}
+L'analisi dei clusters è stata svolta normalizzando i valori degli attributi tra 0 e 1, con lo scopo di standardizzare il contributo del valore degli attributi nel calcolo della distanza.
+
+\subsection{clustering via K-means}
+\subsubsection{Scelta degli attributi e della funzione distanza}
 % scelta delle features
 Si sono scelti gli attributi quantitativi ($satisfaction\_level$, $last\_evaluation$, $average\_montly\_hours$, $time\_spend\_company$) e l'attributo numerico ordinale $number\_project$. 
 La scelta degli attributi quantitivi è giustificata dal fatto che l'algoritmo K-means richiede di calcolare la media, la quale è definita solo per gli attributi quantitiativi. 
@@ -20,9 +22,9 @@ L'unica eccezione è stata fatta per l'attributo $number\_project$ essendo oridi
 L'interpretazione è stata che se $number\_project$ ha valore frazionario $d.f$ (con $d$ parte intera, $f$ parte float) per un dato centroide, allora il cluster da lui rappresentato contiene gli impiegati che in media hanno fatto tra $d$ e $d+1$ progetti.
 % scelta della funzione distanza
 \paragraph{}
-La funzione distanza scelta è stata la distanza Euclidea perché i centroidi sono medie nello spazio Euclideo in $\Re^{n}$, dove $n$ è il numero di attributi. [TODO: spiega meglio]
+La funzione distanza scelta è stata la distanza Euclidea perché i centroidi sono medie nello spazio Euclideo in $\Re^{n}$, dove $n$ è il numero di attributi. Inoltre il valore  della distanza tra 2 punti è di più facile interpretazione rispetto ad altre metriche. 
 
-\subsection{Identificazione del miglior valore di k} \label{trovare_valore_di_k}
+\subsubsection{Identificazione del miglior valore di k} \label{trovare_valore_di_k}
 Identificare il numero di clusters è importante per trovare un compromesso tra pochi grandi clusters e molti piccoli, e spesso insignificanti, clusters. Per indentificare il miglior valore di $k$ per l'algoritmo K-means si è monitorato l'andamento della $Sum\ of\ Squared\ Error\ (SSE)$ e la $silhouette\ score$ al variare di $k$, il cui grafico è riportato in \autoref{fig:sse_sil_vs_k}. Il grafico della $SSE$ ha un andamento non-crescente e diminuisce in maniera smooth, mentre la silhouette presenta molti picchi.
 
 \begin{figure}[hbtp]
@@ -34,12 +36,12 @@ Identificare il numero di clusters è importante per trovare un compromesso tra 
 
 % scelta del punto di gomito
 \paragraph{}
-Sucessivamente si è scelto il punto di gomito della $SSE$ combinando un approccio visivo ad uno quantitativo, analizzando i punti $k$ in cui era presente un maggior calo di $SSE$. La scelta finale per il valore di $k$ ha preso in considerazione anche il corrispondente valore della $silhouette$. La $silhouette$ assumeva valori nel range $\left[0.18, 0.28\right]$ con minimo per $k=47$ e massimo per $k=3$, mentre la $SSE$ assumeva valori tra $\left[640, 3315\right]$ con minimo per $k=50$ e massimo per $k=2$. Inoltre, sono stati presi in considerazione i top 10 valori di $k$ corrispondenti a un maggiore calo della $SSE$ ($top\_diffs$), e, analogamente i top 10 $k$ con maggiore $silhouette$ ($top\_silho$). Si sono ottenuti i seguenti insiemi di valori di $k$, candidati ad essere punti di gomito: $top\_diffs=\lbrace3,4,5,6,7,8,9,10,11,12\rbrace$ and $top\_silho\lbrace3,8,14,7,6,10,5,9,4,18\rbrace$. Mettendo insieme tutte le precendenti informazioni e considerando l'insieme $top\_diffs \cap top\_silho$, si è scelto il punto di gomito $k=8$, corrispondente a $SSE=1474$ and $silhouette=0.27$.
+Sucessivamente si è scelto il punto di gomito della $SSE$ combinando un approccio visivo ad uno quantitativo, analizzando i punti $k$ in cui era presente un maggior calo di $SSE$. La scelta finale per il valore di $k$ ha preso in considerazione anche il corrispondente valore della $silhouette$. La $silhouette$ assumeva valori nel range $\left[0.18, 0.28\right]$ con minimo per $k=47$ e massimo per $k=3$, mentre la $SSE$ assumeva valori tra $\left[640, 3315\right]$ con minimo per $k=50$ e massimo per $k=2$. Inoltre, sono stati presi in considerazione i top 10 valori di $k$ corrispondenti a un maggiore calo della $SSE$ ($top\_diffs$). Analogamente sono stati presi i top 10 $k$ con maggiore $silhouette$ ($top\_silho$). Si sono ottenuti i seguenti insiemi di valori di $k$, candidati ad essere punti di gomito: $top\_diffs=\lbrace3,4,5,6,7,8,9,10,11,12\rbrace$ and $top\_silho=\lbrace3,8,14,7,6,10,5,9,4,18\rbrace$. Mettendo insieme tutte le precendenti informazioni e considerando l'insieme $top\_diffs \cap top\_silho$, si è scelto il punto di gomito $k=8$, corrispondente a $SSE=1474$ and $silhouette=0.274$.
 
 \paragraph{}
-Alternativamente, scegliendo il punto del grafico della $SSE$ più vicino all'origine in norma Euclidea, si era ottenuto il punto $k=12$, con $SSE=1210$ e $silhouette=0.27$.
+Alternativamente, scegliendo il punto del grafico della $SSE$ più vicino all'origine in norma Euclidea, si era ottenuto il punto $k=12$, con $SSE=1210$ e $silhouette=0.257$.
 
-\subsection{Caratterizzazione dei clusters ottenuti}
+\subsubsection{Caratterizzazione dei clusters ottenuti}
 La caratterizzazione dei cluster ottenuti è stata svolta per mezzo dell'analisi dei centroidi, e confrontando le distribuzioni degli attributi dei singoli cluster con quelle dell'intero dataset.
 % analisi per centroidi
 \paragraph{}
@@ -85,34 +87,35 @@ $time\_spend\_company$ ha meno variabilità riportando un picco relativamente ac
     \label{fig:kde_clusters}%
 \end{figure*}
 
-\subsection{Visualizzazione del clustering via Principal Component Analysis}
+\subsubsection{Visualizzazione del clustering via Principal Component Analysis}
 I risultati ottenuti dal clustering via K-means sono stati combinati con la PCA per visualizzare la proiezione di ogni punto di dati in due dimensioni. Il dataset ha una forma globulare allungata, simile ad un ellisse. I punti di dati sono molto vicini gli uni agli altri formando un dataset molto denso, in cui i cluster 4 e 5 sono molto definiti, mentre i punti degli altri clusters tendono a mischiarsi. In basso a sinistra è presente una zona di bassa densità di punti appartenenti al cluster 0, mentre in alto a destra vi è un chiaro outlier assegnato al cluster 7. La natura dell'outlier in termini di attributi non è stata approfondita.
 
 \begin{figure}[hbtp]
 \centering 
 \includegraphics[width=1\columnwidth]{../images/pca_kmeans.png}
-\caption{visualizzazione del clustering in 2D. Ad ogni punto di dati è associata una label. Ogni label è rappresentata con un colore. Dataset denso a forma di ellisse. Un outlier è chiaramente presente in alto a destra.}
+\caption{Visualizzazione del clustering in 2D. Ad ogni punto di dati è associata una label. Ogni label è rappresentata con un colore. Dataset denso a forma di ellisse. Un outlier è chiaramente presente in alto a destra.}
 \label{fig:pca_kmeans}
 \end{figure}
 
-\section{Clustering via DBSCAN}
+\subsection{Clustering via DBSCAN}
 L'analisi dei cluster con il metodo DBSCAN è stata svolta per identificare clusters con forma arbitraria.
 Con lo scopo di confrontare i risultati ottenuti con K-means, sono stati scelti gli attributi quantitativi e ordinali, e la distanza euclidea per funzione distanza.
 
-\subsection{Studio dei parametri minPoints ed epsilon}
-La scelta dei parametri $minPoints$ ed $\epsilon$ è stata ispirata dal metodo proposto da Ester et Al. in \cite{dbscan}. \autoref{fig:epsilon_selection} riporta il grafico delle distanze di ogni punto dati al $k-esimo$ punto dati più vicino, ordinate in modo decrescente. 
+\subsubsection{Studio dei parametri minPoints ed epsilon}
+La scelta dei parametri $minPoints$ ed $\epsilon$ è stata ispirata dal metodo proposto da Ester et Al\footnote{Ester, Martin, et al. A density-based algorithm for discovering clusters in large spatial databases with noise. Kdd. Vol. 96. No. 34. 1996.}. 
+\autoref{fig:epsilon_selection} riporta il grafico delle distanze di ogni punto dati al $k-esimo$ punto dati più vicino, ordinate in modo decrescente. 
 \footnote{Per visibilità sono riportate soltanto le curve  per $k=4$ e $k=8$. Le curve per valori intermedi di $k$ giacciono tra le due curve mostrate in figura.}
 I grafici, per valori diversi di $k$, avevano la stessa forma, e i valori delle ascisse erano uguali per almeno 7 punti decimali. Inoltre, dal momento che i valori di $minPoints$ ed $\epsilon$ giocano sullo stesso compromesso, l'analisi è stata portata avanti fissando $minPoints=k+1$, escludendo il punto dati stesso dal calcolo dei punti vicini.
 
 \begin{figure}[hbtp]
 \centering
 \includegraphics[width=1\columnwidth]{../images/dbscan_epsilon_selection.png}
-\caption{Distanza decrescente al $k-th$ punto più vicino per ogni punto dati. La linea continua rappresenta la curva delle distanze per $k=4$, mentre la linea tratteggiata per $k=8$. Le curve hanno la stessa forma.}
+\caption{Distanze tra ogni punto dati e il suo $k-th$ punto più vicino ordinate in maniera non-crescente.}
 \label{fig:epsilon_selection}
 \end{figure}
 
 \paragraph{}
-Per la scelta di $\epsilon$, l'idea era quella di trovare il punto di gomito in\autoref{fig:epsilon_selection}. Dalla figura si vede chiaramente che il punto di gomito giace nell'intervallo di valori $\epsilon \in \left[0.1, 0.3\right]$. Usando un metodo analogo utilizzato in \autoref{trovare_valore_di_k}, si è ottenuto come risultato $\epsilon=0.297$ e $silhouette=0.301$. Dal momento che il valore $\epsilon$ ottenuto era ai margini dell'intervallo di valori predetto visualmente, è stata svolta un'indagine più approfondita per scoprire come variava il valore della $silhouette$ al variare di $\epsilon \in \left[0.1, 0.3\right]$. L'intervallo è stato diviso arbitrariamente in 30 punti. L'andamento della $silhouette$ è mostrato in \autoref{fig:epsilon_vs_silhouette}. Il grafico assume un plateau a partire da $\epsilon \cong 0.26$, in cui la $silhouette$ rimane quasi constante. Selezionando $\epsilon=0.26$ si è ottenuto un insieme di due clusters rispettivamente di 14958 e 6 elementi, con valore di $silhouette=0.344$. I rimanenti 35 punti dati sono stati classificati come noise-points. 
+Per la scelta di $\epsilon$, l'idea era quella di trovare il punto di gomito in \autoref{fig:epsilon_selection}. Dalla figura si vede chiaramente che il punto di gomito giace nell'intervallo di valori $\epsilon \in \left[0.1, 0.3\right]$. Usando un metodo analogo utilizzato in \autoref{trovare_valore_di_k}, si è ottenuto come risultato $\epsilon=0.297$ e $silhouette=0.301$. Dal momento che il valore $\epsilon$ ottenuto era ai margini dell'intervallo di valori predetto visualmente, è stata svolta un'indagine più approfondita per scoprire come variava il valore della $silhouette$ al variare di $\epsilon \in \left[0.1, 0.3\right]$. L'intervallo è stato diviso arbitrariamente in 30 punti. L'andamento della $silhouette$ è mostrato in \autoref{fig:epsilon_vs_silhouette}. Il grafico assume un plateau a partire da $\epsilon \cong 0.26$, in cui la $silhouette$ rimane quasi constante. Selezionando $\epsilon=0.26$ si è ottenuto un insieme di due clusters rispettivamente di 14958 e 6 elementi, con valore di $silhouette=0.344$. I rimanenti 35 punti dati sono stati classificati come noise-points. 
 
 \begin{figure}[hbtp]
 \centering
@@ -121,17 +124,82 @@ Per la scelta di $\epsilon$, l'idea era quella di trovare il punto di gomito in\
 \label{fig:epsilon_vs_silhouette}
 \end{figure}
 
-\subsection{Caratterizzazione ed interpretazione dei clusters}
+\subsubsection{Caratterizzazione ed interpretazione dei clusters}
 I clustering ottenuti per diversi valori di $\epsilon$ sono stati caratterizzati analizzando la curva in  \autoref{fig:epsilon_vs_silhouette}.
-Nell'intervallo di valori $epsilon \in \left[0.1, 0.2\right]$ (primi 15 punti sulla curva) il numero di clusters formati varia da 105 fino a 12, in cui sono presenti circa 6 clusters di medie dimensioni, e il resto di dimensioni molto piccole. I noise-points variano da 3278 fino a 281. In questo intervallo si ha $silhouette \leq 0$, il che significa che mediamente i punti di un cluster sono più vicini ai punti di un altro cluster, piuttosto che ai punti del cluster di appartenenza, o che sono presenti troppi clusters.
+Nell'intervallo di valori $epsilon \in \left[0.1, 0.2\right]$ (primi 15 punti sulla curva) il numero di clusters formati varia da 105 fino a 12, in cui sono presenti circa 6 clusters di medie dimensioni, e il resto di dimensioni molto piccole. I noise-points variano da 3278 fino a 281. In questo intervallo si ha $silhouette \leq 0$, il che significa che mediamente i punti di un cluster sono più vicini ai punti di un altro cluster, piuttosto che ai punti del cluster di appartenenza, o che sono presenti troppi clusters. Un ulteriore interpretazione è che alcuni clusters si sovrappogono.
 Nella seconda metà del grafico, per $\epsilon \in \left(0.2, 0.3\right]$ si inizia a formare un unico grande cluster contenente almeno il $97\%$ dei dati, con il rimanente $3\%$ diviso tra pochi piccoli clusters e noise-points. 
 In particolare, nell'intervallo $\left[0.26, 0.3\right)$ la $silhouette$ forma un plateau, e sono presenti solo 2 clusters. 
 Investigando i clusters ottenuti nei punti formanti il plateau si è scoperto che i noise-points gradualemente si uniscono ad uno dei 2 clusters.
 Infine, per $\epsilon=0.3$ alcuni noise-points si uniscono per formare un piccolo cluster, diminuendo la $silhouette$.
 
-\begin{thebibliography}{}
-\bibitem{dbscan} 
-\textit{Ester, Martin, et al. "A density-based algorithm for discovering clusters in large spatial databases with noise." Kdd. Vol. 96. No. 34. 1996.}
-\end{thebibliography}
+\subsection{Clustering Gerarchico}
+L'analisi dei cluster con approccio gerarchico è stata fatta con i metodi complete, average e di Ward, perché sono meno suscettibili al rumore dei dati e a gli outliers. Sono stati scelti gli attributi quantitativi e ordinali, e la distanza Euclidea, come in K-means e DBSCAN.\footnote{Sono visualizzati soltanto i primi 3 livelli dei dendogrammi per facilitarne la comprensione.}  
+
+\paragraph{Complete linkage.}
+\autoref{fig:complete_linkage} mostra il dendogramma ottenuto con il metodo complete linkage. A distanza minore di 25 si otterrebbero 16 clusters. I primi due clusters nella parte alta della figura (rispettivamente di 3300 e 4617 elementi) si uniscono con incremento di distanza relativamente alto, la quale diventa $1.6$. Successive unificazioni di clusters incrementano lentamente la distanza fino a $1.91$.
+Il dendogramma suggerisce la presenza di 2 clusters ottenuti con una linea di taglio a distanza $1.85$.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=\columnwidth]{../images/hierarchical_clustering_complete-annotated.png}
+\caption{Dendogramma per il metodo complete linkage. La riga verticale nera rappresenta il taglio del dendogramma a distanza $1.85$ risultante in 2 clusters.}
+\label{fig:complete_linkage}
+\end{figure}
+
+\paragraph{Average Linkage.}
+\autoref{fig:average_linkage} mostra il dendogramma ottenuto con il metodo average linkage. Nella parte bassa della figura, a distanza $1.04$, un singleton (con label 7492) si unisce ad un grande agglomerato di clusters di 14966 elementi. Questa unificazione avviene relativamente tardi, il che suggerisce che il singleton sia un outlier. A metà figura due coppie di singleton si uniscono con un piccolo agglomerato di clusters, facendo un incremento di distanza relativamente alto, che arriva a $1.05$. Dato questo grande salto in distanza e le dimensioni ridotte dei clusters coinvolti nell'unificazione, si è deciso di tagliare il dendogramma a distanza 1, ottenendo 4 clusters.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=\columnwidth]{../images/hierarchical_clustering_average-annotated.png}
+\caption{Dendogramma per il metodo average linkage. La riga che taglia il dendogramma a distanza 1 risulta in 4 clusters.}
+\label{fig:average_linkage}
+\end{figure}
+
+\paragraph{Ward's method Linkage.}
+\autoref{fig:ward_linkage} mostra il dendogramma ottenuto con il metodo di Ward. Il clustering ottenuto con questo metodo è il più equilibrato, in quanto nei livelli mostrati in figura, non sono presenti clusters di dimensioni molto piccole. Tuttavia la distanza assume valori molto più elevati rispetto ai precedenti metodi. Per una distanza minore di 15 si hanno unificazioni con incremento graduale della distanza, mentre negli ultimi 6 collegamenti la distanza fa lunghi salti raggiungendo $41.61$. Per questo motivo si è deciso di tagliare il dendogramma a distanza 15 ottenendo 7 clusters.
+
+\begin{figure}[hbtp]
+\centering
+\includegraphics[width=\columnwidth]{../images/hierarchical_clustering_ward-annotated.png}
+\caption{Dendogramma per il metodo Ward. Il taglio a distanza 15 fa ottenere 7 clusters.}
+\label{fig:ward_linkage}
+\end{figure}
+
+\paragraph{Calcolo della silhouette.} Il calcolo della silhouette è stato fatto considerando un algoritmo di clustering non strutturato, e uno di tipo strutturato considerando $n=100$ punti vicini\footnote{Dato il costo computazionale, valori maggiori di $n$ non sono stati considerati.}. La silhouette è stata calcolata per i tre metodi impostando un numero di clusters da 2 a 9. Il range di valori assunti dalla silhouette è mostrato in \autoref{tab:hierarchical_silhouette}, in cui si vede che i migliori risultati si ottengono per C=2 clusters e n=100 per i metodi complete e average, e con algoritmo non strutturato per il metodo Ward. In particolare, con i primi due metodi si ottengono risultati identici in termini di silhouette (solo per C=2). Anche i clusters ottenuti hanno le stesse dimensioni (solo per C=2) di 14995 e 4 elementi\footnote{Non è stato controllato che anche i singoli elementi fossero assegnati a gli stessi clusters.}.  
+
+\begin{table}
+\caption{Intervallo di valori assunti dalla silhouette, per un numero di cluster C da 2 a 9, per i metodi complete, average e Ward. Risultati ottenuti con un algoritmo non strutturato (U) e strutturato considerando n=100 vicini. Per ogni metodo il miglior risultato è mostrato in grassetto. I numeri sottolineati sono risultati altrettanto buoni.}
+
+\begin{tabular}{|c|c|c|c|c|}
+\hline 
+Metodo & Silhouette C=2 - U & Silhouette C=9 - U & Silhouette C=2 - n=100 & Silhouette C=9 - n=100 \\ 
+\hline 
+Complete & 0.197 & 0.143 & \textbf{0.348} & - 0.061 \\ 
+\hline 
+Average & \underline{0.339} & 0.209 & \textbf{0.348} & 0.149 \\ 
+\hline 
+Ward & \textbf{0.306} & 0.215 & \underline{0.295} & 0.202 \\ 
+\hline 
+\end{tabular}
+\label{tab:hierarchical_silhouette}
+\end{table}
+
+\subsection{Valutazione del miglior metodo di clustering}
+\autoref{tab:performance_clustering} riassume le prestazioni degli algoritmi di clustering usati. L'algoritmo che ha dato risultati migliori, in termini di silhouette, è il clustering gerarchico usando il metodo average linkage\footnote{A pari merito con il metodo complete linkage.} , il quale rileva che nel dataset sono presenti 2 clusters, rispettivamente di 14955 e 4 elementi. DBSCAN ha avuto risultati simili, sia in termini di silhouette che per i clusters rilevati, ottenendo 2 clusters di dimensioni 14958 e 6 elementi, e 35 noise-points. Mentre l'algoritmo con prestazioni minori è K-means, il quale rileva 7 clusters di dimensioni quasi omogenee. 
+
+\begin{table}
+\caption{Confronto delle prestazioni degli algoritmi di clustering K-means, DBSCAN e gerarchico. Risultati ottenuti impostando i seguenti parametri: K=8 per K-means. MinPoints=4, $\epsilon=0.26$ per DBSCAN ottenendo 2 clusters. Metodo average linkage con n=100 vicini per clustering gerarchico, ottenendo 2 clusters. In grassetto il miglior risultato.}
+
+\begin{tabular}{c|c}
+Algoritmo & Silhouette \\
+\hline 
+K-means & 0.274 \\ 
+DBSCAN & 0.344 \\ 
+Gerarchico & \textbf{0.348} \\ 
+\hline 
+\end{tabular} 
+\label{tab:performance_clustering}
+\end{table}
 
 \end{document}
