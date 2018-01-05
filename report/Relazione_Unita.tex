@@ -87,7 +87,7 @@ promotion\_last\_5years      & Indica se l'impiegato ha ottenuto una promozione 
 sales                        & Dipartimento per il quale l'impiegato lavora                                      & Stringa, non ordinale   & $ \{'sales','accounting',$\newline
 $'hr','technical',$\newline
 $'support','management',$\newline
-$'IT','product_mng',$\newline
+$'IT','product\_mng',$\newline
 $'marketing','RandD'\}$    \\ 
 salary                       & Fascia di salario nella quale rientra l'impiegato     & Stringa, ordinale    & $ \{ 'low', 'medium', 'high' \}$   \\ \hline
 \end{tabularx}
@@ -221,7 +221,7 @@ Infine, nessuno degli attributi risulta essere legato ad altri da una stessa log
 L'indice di correlazione di \textit{Pearson} tra le coppie di attributi del dataset è rappresentato graficamente nella figura \ref{fig:corr_heatmap} (utilizzando una \textit{Heat Map}). Nella maggior parte dei casi, il livello di correlazione non supera la soglia del 30\% (si parla quindi di \textit{correlazione debole\footnote{https://it.wikipedia.org/wiki/Indice\_di\_correlazione\_di\_Pearson}}), mentre se ci si concentra sulle feature \texttt{last_evaluation}, \texttt{number_project} e \texttt{average_montly_hours} notiamo che il livello di correlazione tra di esse si alza di poco. Tuttavia, esso rimane ben al di sotto della soglia della \textit{correlazione forte} (che è del 70\%). 
 Date le circostanze, dunque, è stata esclusa la presenza di variabili ridondanti: di conseguenza, nessuna feature è stata esclusa dall'analisi.
 \begin{center}
-\includegraphics[width=0.7\textwidth]{corr_heatmap.png}
+\includegraphics[width=0.6\textwidth]{corr_heatmap.png}
 \captionof{figure}{Correlazione tra gli attributi (metrica di \textit{Pearson})}
 \label{fig:corr_heatmap}
 \end{center}
@@ -406,16 +406,20 @@ Il dendogramma suggerisce la presenza di 2 clusters ottenuti con una linea di ta
 \paragraph{Calcolo della silhouette.} Il calcolo della silhouette è stato fatto considerando un algoritmo di clustering non strutturato, e uno di tipo strutturato considerando $n=100$ punti vicini\footnote{Dato il costo computazionale, valori maggiori di $n$ non sono stati considerati.}. La silhouette è stata calcolata per i tre metodi impostando un numero di clusters da 2 a 9. Il range di valori assunti dalla silhouette è mostrato in \autoref{tab:hierarchical_silhouette}, in cui si vede che i migliori risultati si ottengono per C=2 clusters e n=100 per i metodi complete e average, e con algoritmo non strutturato per il metodo Ward. In particolare, con i primi due metodi si ottengono risultati identici in termini di silhouette (solo per C=2). Anche i clusters ottenuti hanno le stesse dimensioni (solo per C=2) di 14995 e 4 elementi\footnote{Non è stato controllato che anche i singoli elementi fossero assegnati a gli stessi clusters.}.  
 
 \begin{table}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1} % Default value: 1
+\rowcolors{1}{grigio_chiaro}{white}
 \caption{Intervallo di valori assunti dalla silhouette, per un numero di cluster C da 2 a 9, per i metodi complete, average e Ward. Risultati ottenuti con un algoritmo non strutturato (U) e strutturato considerando n=100 vicini. Per ogni metodo il miglior risultato è mostrato in grassetto. I numeri sottolineati sono risultati altrettanto buoni.}
 
 \begin{tabular}{|c|c|c|c|c|}
+
 \hline 
 Metodo & Silhouette C=2 - U & Silhouette C=9 - U & Silhouette C=2 - n=100 & Silhouette C=9 - n=100 \\ 
-\hline 
+\hline
 Complete & 0.197 & 0.143 & \textbf{0.348} & - 0.061 \\ 
-\hline 
+
 Average & \underline{0.339} & 0.209 & \textbf{0.348} & 0.149 \\ 
-\hline 
+
 Ward & \textbf{0.306} & 0.215 & \underline{0.295} & 0.202 \\ 
 \hline 
 \end{tabular}
@@ -426,6 +430,9 @@ Ward & \textbf{0.306} & 0.215 & \underline{0.295} & 0.202 \\
 \autoref{tab:performance_clustering} riassume le prestazioni degli algoritmi di clustering usati. L'algoritmo che ha dato risultati migliori, in termini di silhouette, è il clustering gerarchico usando il metodo average linkage\footnote{A pari merito con il metodo complete linkage.} , il quale rileva che nel dataset sono presenti 2 clusters, rispettivamente di 14955 e 4 elementi. DBSCAN ha avuto risultati simili, sia in termini di silhouette che per i clusters rilevati, ottenendo 2 clusters di dimensioni 14958 e 6 elementi, e 35 noise-points. Mentre l'algoritmo con prestazioni minori è K-means, il quale rileva 8 clusters di dimensioni quasi omogenee. 
 
 \begin{table}
+\setlength{\tabcolsep}{5pt} % Default value: 6pt
+\renewcommand{\arraystretch}{1} % Default value: 1
+\rowcolors{1}{grigio_chiaro}{white}
 \caption{Confronto delle prestazioni degli algoritmi di clustering K-means, DBSCAN e gerarchico. Risultati ottenuti impostando i seguenti parametri: K=8 per K-means. MinPoints=4, $\epsilon=0.26$ per DBSCAN ottenendo 2 clusters. Metodo average linkage con n=100 vicini per clustering gerarchico, ottenendo 2 clusters. In grassetto il miglior risultato.}
 
 \begin{tabular}{c|c}
@@ -1102,7 +1109,7 @@ Parlando invece dei pesi assegnati alle classi \texttt{not_left} e \texttt{left}
 Infine, la tabella \ref{tab:performancesOfBestModel} illustra le performance di \textit{M} su \textit{Training set} e \textit{Test set}. L'albero di decisione corrispondente è riportato nella figura \ref{fig:best_model_representation}: analogamente agli altri modelli studiati nella precedente sezione, vediamo che la prima suddivisione dei record avviene sull'attributo \texttt{satisfaction_level}. Al primo livello dell'albero, le suddivisioni si basano unicamente sull'attributo \texttt{number_project}: ad eccezione del modello 1 (figura \ref{img:model1}), nessuno degli altri modelli aveva utilizzato questa feature nelle decisioni del primo livello. Riguardo a \texttt{Work_accident}, invece, il modello \textit{M} è l'unico ad averlo coinvolto nelle decisioni dei primi due livelli. 
 
 
-La figura \ref{fig:feat_imp_best_mod} mostra invece l'importanza di ogni attributo nel processo di decisione di \textit{M}: in accordo con la prima suddivisione nella rappresentazione grafica dell'albero, vediamo che \texttt{satisfaction_level} è la feature che più incide nel processo di decisione. Seguono poi \texttt{time_spend_company} e \texttt{number_project}, mentre è evidente la poca influenza delle feature \texttt{salary} e \texttt{Work_accident}.\newline
+La figura \ref{fig:feat_imp_best_mod} mostra invece l'importanza di ogni attributo nel processo di decisione di \textit{M}: in accordo con la prima suddivisione nella rappresentazione grafica dell'albero, vediamo che \texttt{satisfaction_level} è la feature che più incide nel processo di decisione. Seguono poi \texttt{time_spend_company} e \texttt{number_project}, mentre è evidente la poca influenza delle feature \texttt{salary} e \texttt{Work_accident}.
 
 Allo scopo di attuare un confronto generale tra tutti i modelli precedentemente illustrati, la figura \ref{fig:roc_curves_all_models} mostra le curve ROC per tutti i modelli analizzati in precedenza.
 
