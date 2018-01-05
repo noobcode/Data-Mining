@@ -913,7 +913,7 @@ Nel seguito sono riportate le performance di diversi alberi di decisione, ognuno
 \subsubsection*{Modello 1}
 
 L'unico vincolo di questo modello riguarda la massima profondità dell'albero.
-Il modello nella figura \ref{img:model1} opera una prima suddivisione dei record in base al valore dell'attributo \texttt{satisfaction_level}: quelli aventi un valore maggiore di 0.465 sono classificati come \texttt{Not left} (questa scelta risulta abbastanza intuitiva). Se invece \texttt{satisfaction_level} assume un valore minore o uguale a 0.465, allora il modello controlla anche il valore dell'attributo \texttt{number_project}: se un impiegato ha portato a termine più di 2 progetti, allora viene classificato come \texttt{Not left}. In caso contrario, viene attribuito alla classe \texttt{Left}.\newline\bigskip
+Il modello nella figura \ref{img:model1} opera una prima suddivisione dei record in base al valore dell'attributo \texttt{satisfaction_level}: quelli aventi un valore maggiore di 0.465 sono classificati come \texttt{not_left} (questa scelta risulta abbastanza intuitiva). Se invece \texttt{satisfaction_level} assume un valore minore o uguale a 0.465, allora il modello controlla anche il valore dell'attributo \texttt{number_project}: se un impiegato ha portato a termine più di 2 progetti, allora viene classificato come \texttt{not_left}. In caso contrario, viene attribuito alla classe \texttt{left}.\newline\bigskip
 
 \noindent\begin{minipage}{\textwidth}
 
@@ -946,8 +946,8 @@ Il modello nella figura \ref{img:model1} opera una prima suddivisione dei record
 Per questo modello è stato deciso di rilassare leggermente il vincolo sulla profondità massima ed è stato deciso di assegnare un peso diverso a ciascuna delle due classi (in accordo alla distribuzione dei valori della feature \texttt{left}).
 Il modello nella figura \ref{img:model2}, come il precedente, effettua inizialmente una suddivisione basandosi sull'attributo \texttt{satisfaction_level}: 
 \begin{itemize}
-\item se l'impiegato ha un livello di soddisfazione inferiore o uguale a 0.465, il modello controlla \texttt{time_spend_company}. Per un valore minore o uguale a 4.5, il modello tende ad assegnare l'etichetta \texttt{Left} (la successiva divisione si basa di nuovo su \texttt{time_spend_company}). Altrimenti assegna nella maggior parte dei casi l'etichetta \texttt{Not left} (con la successiva suddivisione su \texttt{satisfaction_level}
-\item se invece il livello di soddisfazione è superiore a 0.465, il modello controlla di nuovo \texttt{time_spend_company}: al contrario di prima, per un valore minore o uguale a 4.5, il modello assegna alla maggior parte dei record la classe \texttt{Not left} (divisione successiva: \texttt{number_projects}). Per un valore maggiore di 4.5, invece, la classe è \texttt{Left} (divisione successiva: \texttt{last_evaluation})
+\item se l'impiegato ha un livello di soddisfazione inferiore o uguale a 0.465, il modello controlla \texttt{time_spend_company}. Per un valore minore o uguale a 4.5, il modello tende ad assegnare l'etichetta \texttt{Left} (la successiva divisione si basa di nuovo su \texttt{time_spend_company}). Altrimenti assegna nella maggior parte dei casi l'etichetta \texttt{not_left} (con la successiva suddivisione su \texttt{satisfaction_level}
+\item se invece il livello di soddisfazione è superiore a 0.465, il modello controlla di nuovo \texttt{time_spend_company}: al contrario di prima, per un valore minore o uguale a 4.5, il modello assegna alla maggior parte dei record la classe \texttt{not_left} (divisione successiva: \texttt{number_projects}). Per un valore maggiore di 4.5, invece, la classe è \texttt{left} (divisione successiva: \texttt{last_evaluation})
 \end{itemize}
 
 \noindent \begin{minipage}{\textwidth}
@@ -982,8 +982,8 @@ Il modello nella figura \ref{img:model2}, come il precedente, effettua inizialme
 Anche in questo modello sono stati attribuiti pesi diversi alle due classi. Tuttavia, il vincolo sulla profondità massima è stato eliminato a favore di una strategia di \textit{pre-pruning} (alti valori di \texttt{min_samples_split} e \texttt{min_samples_leaf}).
 Come nei precedenti modelli, la prima suddivisione del modello in figura \ref{img:model3} riguarda \texttt{satisfaction_level}: 
 \begin{itemize}
-\item \texttt{satisfaction_level} $\leq$ 0.465: all'impiegato è assegnata la classe \texttt{Left}
-\item \texttt{satisfaction_level} $>$ 0.465: un'ulteriore suddivisione viene effettuata in base al valore di \texttt{time_spend_company}. Se l'impiegato ha un valore dell'attributo superiore a 3.5, allora viene classificato come appartenente alla classe \texttt{Left}. In caso contrario, è molto probabile che ad egli venga attribuita l'etichetta \texttt{Not left} (divisione successiva: \texttt{average_montly_hours})
+\item \texttt{satisfaction_level} $\leq$ 0.465: all'impiegato è assegnata la classe \texttt{left}
+\item \texttt{satisfaction_level} $>$ 0.465: un'ulteriore suddivisione viene effettuata in base al valore di \texttt{time_spend_company}. Se l'impiegato ha un valore dell'attributo superiore a 3.5, allora viene classificato come appartenente alla classe \texttt{left}. In caso contrario, è molto probabile che ad egli venga attribuita l'etichetta \texttt{not_left} (divisione successiva: \texttt{average_montly_hours})
 \end{itemize}\bigskip
   
 \noindent \begin{minipage}{\textwidth}
@@ -1018,9 +1018,9 @@ Come nei precedenti modelli, la prima suddivisione del modello in figura \ref{im
 L'unico vincolo di questo modello, seppur non molto stringente, riguarda \texttt{min_samples_split} e \texttt{min_samples_leaf}. Con un valore di 10 per entrambi i parametri, infatti, questa limitazione è apprezzabile soltanto ai livelli più bassi dell'albero.
 Nel modello in figura \ref{img:model4}, ancora una volta, la prima suddivisione riguarda \texttt{satisfaction_level}: 
 \begin{itemize}
-\item \texttt{satisfaction_level} $\leq$ 0.465: se il valore di \texttt{time_spend_company} è minore o uguale a 4.5, l'etichetta assegnata con più probabilità è \texttt{Left} (con la divisione successiva di nuovo su \texttt{time_spend_company}). Se \texttt{time_spend_company} è invece maggiore di 4.5, il modello tende ad assegnare l'etichetta \texttt{Not left} (divisione successiva: \texttt{satisfaction_level})
+\item \texttt{satisfaction_level} $\leq$ 0.465: se il valore di \texttt{time_spend_company} è minore o uguale a 4.5, l'etichetta assegnata con più probabilità è \texttt{Left} (con la divisione successiva di nuovo su \texttt{time_spend_company}). Se \texttt{time_spend_company} è invece maggiore di 4.5, il modello tende ad assegnare l'etichetta \texttt{not_left} (divisione successiva: \texttt{satisfaction_level})
 
-\item \texttt{satisfaction_level} $>$ 0.465: come prima, suddividiamo in base a \texttt{time_spend_company}. Se l'impiegato ha un valore dell'attributo superiore a 4.5, allora tende ad essere classificato come appartenente alla classe \texttt{Left} (divisione successiva: \texttt{last_evaluation}). In caso contrario, è molto probabile che ad egli venga attribuita l'etichetta \texttt{Not left} (divisione successiva: \texttt{average_montly_hours})
+\item \texttt{satisfaction_level} $>$ 0.465: come prima, suddividiamo in base a \texttt{time_spend_company}. Se l'impiegato ha un valore dell'attributo superiore a 4.5, allora tende ad essere classificato come appartenente alla classe \texttt{left} (divisione successiva: \texttt{last_evaluation}). In caso contrario, è molto probabile che ad egli venga attribuita l'etichetta \texttt{not_left} (divisione successiva: \texttt{average_montly_hours})
 \end{itemize}\bigskip
 \noindent \begin{minipage}{\textwidth}
 
@@ -1111,7 +1111,7 @@ Infine, la tabella \ref{tab:performancesOfBestModel} illustra le performance di 
 
 La figura \ref{fig:feat_imp_best_mod} mostra invece l'importanza di ogni attributo nel processo di decisione di \textit{M}: in accordo con la prima suddivisione nella rappresentazione grafica dell'albero, vediamo che \texttt{satisfaction_level} è la feature che più incide nel processo di decisione. Seguono poi \texttt{time_spend_company} e \texttt{number_project}, mentre è evidente la poca influenza delle feature \texttt{salary} e \texttt{Work_accident}.
 
-Allo scopo di attuare un confronto generale tra tutti i modelli precedentemente illustrati, la figura \ref{fig:roc_curves_all_models} mostra le curve ROC per tutti i modelli analizzati in precedenza.
+Allo scopo di attuare un confronto generale tra tutti i modelli precedentemente illustrati, la figura \ref{fig:roc_curves_all_models} mostra le curve ROC per tutti i modelli analizzati in precedenza. Esse, a giudicare dal valore di AUC (\textit{Area Under the Curve}), confermano la superiorità del modello M rispetto agli altri. In accordo con la tabella \ref{tab:performances}, notiamo che il modello meno performante è il \textit{Modello 3}.
 
 
 
@@ -1127,7 +1127,7 @@ Allo scopo di attuare un confronto generale tra tutti i modelli precedentemente 
 	\hline
 	\textbf{Parametro}       & \textbf{Intervallo}  & \textbf{Valore scelto} \\
 	criterion                & ['gini', 'entropy']  & entropy   \\
-	max\_depth               & [None]  & 9       \\
+	max\_depth               & [2, 3, ..., 12, None]  & 9       \\
 	min\_samples \_split      & [2, 3, ..., 51] & 8         \\
 	min\_samples \_leaf       & [2, 3, ..., 51] & 2        \\
 	class\_weight            & [(not\_left=1, left=4), None, Balanced]   & None  \\\hline
