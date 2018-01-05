@@ -54,14 +54,15 @@
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.1}Scelta degli attributi e della funzione distanza}{6}{subsubsection.2.1.1}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.2}Identificazione del miglior valore di k}{6}{subsubsection.2.1.2}}
 \newlabel{trovare_valore_di_k}{{2.1.2}{6}{Identificazione del miglior valore di k}{subsubsection.2.1.2}{}}
-\@writefile{toc}{\contentsline {paragraph}{Scelta del punto di gomito.}{6}{section*.6}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Caratterizzazione dei clusters ottenuti}{6}{subsubsection.2.1.3}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Andamento della SSE e silhouette al variare di k. Il punto di gomito \IeC {\`e} scelto per $k=8$, cui corrisponde $SSE=1474$ e $silhouette=0.274$.\relax }}{7}{figure.caption.5}}
-\newlabel{fig:sse_sil_vs_k}{{2.1}{7}{Andamento della SSE e silhouette al variare di k. Il punto di gomito è scelto per $k=8$, cui corrisponde $SSE=1474$ e $silhouette=0.274$.\relax }{figure.caption.5}{}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.1}{\ignorespaces Andamento della SSE e silhouette al variare di k. Il punto di gomito \IeC {\`e} scelto per $k=8$, cui corrisponde $SSE=1474$ e $silhouette=0.274$.\relax }}{6}{figure.caption.5}}
+\newlabel{fig:sse_sil_vs_k}{{2.1}{6}{Andamento della SSE e silhouette al variare di k. Il punto di gomito è scelto per $k=8$, cui corrisponde $SSE=1474$ e $silhouette=0.274$.\relax }{figure.caption.5}{}}
+\@writefile{toc}{\contentsline {paragraph}{Scelta del punto di gomito.}{7}{section*.6}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.1.3}Caratterizzazione dei clusters ottenuti}{7}{subsubsection.2.1.3}}
 \@writefile{toc}{\contentsline {paragraph}{}{7}{section*.7}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.2}{\ignorespaces Analisi dei valori degli attributi dei centroidi ottenuti. Ogni centroide \IeC {\`e} rappresentato da un insieme di segmenti, i cui estremi marcano i valori degli attributi. Gli attributi dei clusters 1 e 3 seguono lo stesso andamento.\relax }}{7}{figure.caption.8}}
 \newlabel{fig:centroids}{{2.2}{7}{Analisi dei valori degli attributi dei centroidi ottenuti. Ogni centroide è rappresentato da un insieme di segmenti, i cui estremi marcano i valori degli attributi. Gli attributi dei clusters 1 e 3 seguono lo stesso andamento.\relax }{figure.caption.8}{}}
 \@writefile{toc}{\contentsline {paragraph}{}{7}{section*.9}}
+\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Clustering via DBSCAN}{7}{subsection.2.2}}
 \newlabel{fig:kde_dataset}{{2.3a}{8}{intero dataset\relax }{figure.caption.10}{}}
 \newlabel{sub@fig:kde_dataset}{{a}{8}{intero dataset\relax }{figure.caption.10}{}}
 \newlabel{fig:kde_2}{{2.3b}{8}{cluster 2\relax }{figure.caption.10}{}}
@@ -71,29 +72,28 @@
 \@writefile{lof}{\contentsline {figure}{\numberline {2.3}{\ignorespaces Kernel density estimation degli attributi \subref  {fig:kde_dataset} per l'intero dataset, \subref  {fig:kde_2} per il cluster 2, e \subref  {fig:kde_7} per il cluster 7. Gli acuti picchi dell'attributo $satisfaction\_level$ per i cluster 2 e 7 non sono cos\IeC {\`\i } pronunciati anche nell'intero dataset.\relax }}{8}{figure.caption.10}}
 \newlabel{fig:kde_clusters}{{2.3}{8}{Kernel density estimation degli attributi \subref {fig:kde_dataset} per l'intero dataset, \subref {fig:kde_2} per il cluster 2, e \subref {fig:kde_7} per il cluster 7. Gli acuti picchi dell'attributo $satisfaction\_level$ per i cluster 2 e 7 non sono così pronunciati anche nell'intero dataset.\relax }{figure.caption.10}{}}
 \newlabel{fig:test}{{2.3}{8}{Kernel density estimation degli attributi \subref {fig:kde_dataset} per l'intero dataset, \subref {fig:kde_2} per il cluster 2, e \subref {fig:kde_7} per il cluster 7. Gli acuti picchi dell'attributo $satisfaction\_level$ per i cluster 2 e 7 non sono così pronunciati anche nell'intero dataset.\relax }{figure.caption.10}{}}
-\@writefile{toc}{\contentsline {subsection}{\numberline {2.2}Clustering via DBSCAN}{8}{subsection.2.2}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.1}Studio dei parametri minPoints ed epsilon}{8}{subsubsection.2.2.1}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.4}{\ignorespaces Distanze tra ogni punto dati e il suo $k-th$ punto pi\IeC {\`u} vicino ordinate in maniera non-crescente.\relax }}{8}{figure.caption.11}}
 \newlabel{fig:epsilon_selection}{{2.4}{8}{Distanze tra ogni punto dati e il suo $k-th$ punto più vicino ordinate in maniera non-crescente.\relax }{figure.caption.11}{}}
 \@writefile{toc}{\contentsline {paragraph}{}{8}{section*.12}}
-\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Caratterizzazione ed interpretazione dei clusters}{8}{subsubsection.2.2.2}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.5}{\ignorespaces Andamento della silhouette per epsilon che varia nell'intervallo $\left [0.1,0.3\right ]$. Prima di $\epsilon =0.2$ la silhouette \IeC {\`e} negativa, mentre \IeC {\`e} presente un grande incremento per $\epsilon \cong  0.225$. Dopo $\epsilon \cong  0.26$ \IeC {\`e} presente un plateau. Si \IeC {\`e} scelto $\epsilon = 0.26$, ottenendo $silhouette=0.344$.\relax }}{9}{figure.caption.13}}
 \newlabel{fig:epsilon_vs_silhouette}{{2.5}{9}{Andamento della silhouette per epsilon che varia nell'intervallo $\left [0.1,0.3\right ]$. Prima di $\epsilon =0.2$ la silhouette è negativa, mentre è presente un grande incremento per $\epsilon \cong 0.225$. Dopo $\epsilon \cong 0.26$ è presente un plateau. Si è scelto $\epsilon = 0.26$, ottenendo $silhouette=0.344$.\relax }{figure.caption.13}{}}
+\@writefile{toc}{\contentsline {subsubsection}{\numberline {2.2.2}Caratterizzazione ed interpretazione dei clusters}{9}{subsubsection.2.2.2}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.3}Clustering Gerarchico}{9}{subsection.2.3}}
 \@writefile{toc}{\contentsline {paragraph}{Complete linkage.}{9}{section*.14}}
-\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Dendogramma per il metodo complete linkage. La riga verticale nera rappresenta il taglio del dendogramma a distanza $1.85$ risultante in 2 clusters.\relax }}{9}{figure.caption.15}}
-\newlabel{fig:complete_linkage}{{2.6}{9}{Dendogramma per il metodo complete linkage. La riga verticale nera rappresenta il taglio del dendogramma a distanza $1.85$ risultante in 2 clusters.\relax }{figure.caption.15}{}}
-\@writefile{toc}{\contentsline {paragraph}{Average Linkage.}{10}{section*.16}}
+\@writefile{toc}{\contentsline {paragraph}{Average Linkage.}{9}{section*.16}}
+\@writefile{toc}{\contentsline {paragraph}{Ward's method Linkage.}{9}{section*.18}}
+\@writefile{lof}{\contentsline {figure}{\numberline {2.6}{\ignorespaces Dendogramma per il metodo complete linkage. La riga verticale nera rappresenta il taglio del dendogramma a distanza $1.85$ risultante in 2 clusters.\relax }}{10}{figure.caption.15}}
+\newlabel{fig:complete_linkage}{{2.6}{10}{Dendogramma per il metodo complete linkage. La riga verticale nera rappresenta il taglio del dendogramma a distanza $1.85$ risultante in 2 clusters.\relax }{figure.caption.15}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.7}{\ignorespaces Dendogramma per il metodo average linkage. La riga che taglia il dendogramma a distanza 1 risulta in 4 clusters.\relax }}{10}{figure.caption.17}}
 \newlabel{fig:average_linkage}{{2.7}{10}{Dendogramma per il metodo average linkage. La riga che taglia il dendogramma a distanza 1 risulta in 4 clusters.\relax }{figure.caption.17}{}}
-\@writefile{toc}{\contentsline {paragraph}{Ward's method Linkage.}{10}{section*.18}}
 \@writefile{lof}{\contentsline {figure}{\numberline {2.8}{\ignorespaces Dendogramma per il metodo Ward. Il taglio a distanza 15 fa ottenere 7 clusters.\relax }}{10}{figure.caption.19}}
 \newlabel{fig:ward_linkage}{{2.8}{10}{Dendogramma per il metodo Ward. Il taglio a distanza 15 fa ottenere 7 clusters.\relax }{figure.caption.19}{}}
-\@writefile{toc}{\contentsline {paragraph}{Calcolo della silhouette.}{10}{section*.20}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.1}{\ignorespaces Intervallo di valori assunti dalla silhouette, per un numero di cluster C da 2 a 9, per i metodi complete, average e Ward. Risultati ottenuti con un algoritmo non strutturato (U) e strutturato considerando n=100 vicini. Per ogni metodo il miglior risultato \IeC {\`e} mostrato in grassetto. I numeri sottolineati sono risultati altrettanto buoni.\relax }}{11}{table.caption.21}}
 \newlabel{tab:hierarchical_silhouette}{{2.1}{11}{Intervallo di valori assunti dalla silhouette, per un numero di cluster C da 2 a 9, per i metodi complete, average e Ward. Risultati ottenuti con un algoritmo non strutturato (U) e strutturato considerando n=100 vicini. Per ogni metodo il miglior risultato è mostrato in grassetto. I numeri sottolineati sono risultati altrettanto buoni.\relax }{table.caption.21}{}}
 \@writefile{lot}{\contentsline {table}{\numberline {2.2}{\ignorespaces Confronto delle prestazioni degli algoritmi di clustering K-means, DBSCAN e gerarchico. Risultati ottenuti impostando i seguenti parametri: K=8 per K-means. MinPoints=4, $\epsilon =0.26$ per DBSCAN ottenendo 2 clusters. Metodo average linkage con n=100 vicini per clustering gerarchico, ottenendo 2 clusters. In grassetto il miglior risultato.\relax }}{11}{table.caption.22}}
 \newlabel{tab:performance_clustering}{{2.2}{11}{Confronto delle prestazioni degli algoritmi di clustering K-means, DBSCAN e gerarchico. Risultati ottenuti impostando i seguenti parametri: K=8 per K-means. MinPoints=4, $\epsilon =0.26$ per DBSCAN ottenendo 2 clusters. Metodo average linkage con n=100 vicini per clustering gerarchico, ottenendo 2 clusters. In grassetto il miglior risultato.\relax }{table.caption.22}{}}
+\@writefile{toc}{\contentsline {paragraph}{Calcolo della silhouette.}{11}{section*.20}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {2.4}Valutazione del miglior metodo di clustering}{11}{subsection.2.4}}
 \@writefile{toc}{\contentsline {section}{\numberline {3}Pattern e Association Rules mining}{11}{section.3}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {3.1}Operazioni preliminari}{11}{subsection.3.1}}
@@ -128,9 +128,9 @@
 \@writefile{lot}{\contentsline {table}{\numberline {3.11}{\ignorespaces Regole di associazione usate per predire il valore di Work\_accident\relax }}{16}{table.caption.34}}
 \newlabel{tab:rules_predict_missing}{{3.11}{16}{Regole di associazione usate per predire il valore di Work\_accident\relax }{table.caption.34}{}}
 \@writefile{toc}{\contentsline {subsubsection}{\numberline {3.3.2}Predizione dell'attributo 'left'}{16}{subsubsection.3.3.2}}
-\@writefile{lot}{\contentsline {table}{\numberline {3.12}{\ignorespaces Regole di associazione usate per predire il valore di left\relax }}{16}{table.caption.35}}
-\newlabel{tab:rules_predict_left}{{3.12}{16}{Regole di associazione usate per predire il valore di left\relax }{table.caption.35}{}}
-\@writefile{toc}{\contentsline {section}{\numberline {4}Classificazione}{17}{section.4}}
+\@writefile{toc}{\contentsline {section}{\numberline {4}Classificazione}{16}{section.4}}
+\@writefile{lot}{\contentsline {table}{\numberline {3.12}{\ignorespaces Regole di associazione usate per predire il valore di left\relax }}{17}{table.caption.35}}
+\newlabel{tab:rules_predict_left}{{3.12}{17}{Regole di associazione usate per predire il valore di left\relax }{table.caption.35}{}}
 \@writefile{toc}{\contentsline {subsection}{\numberline {4.1}Classificazione tramite alberi di decisione}{17}{subsection.4.1}}
 \newlabel{img:model1}{{4.1}{17}{Modello 1}{section*.36}{}}
 \@writefile{lof}{\contentsline {figure}{\numberline {4.1}{\ignorespaces Rappresentazione grafica del modello\relax }}{17}{figure.1}}

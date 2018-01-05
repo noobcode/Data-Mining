@@ -244,7 +244,7 @@ Identificare il numero di clusters è importante per trovare un compromesso tra 
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=0.6\columnwidth]{sse_silhouette_vs_k.png}
+\includegraphics[width=0.5\columnwidth]{sse_silhouette_vs_k.png}
 \caption{Andamento della SSE e silhouette al variare di k. Il punto di gomito è scelto per $k=8$, cui corrisponde $SSE=1474$ e $silhouette=0.274$.}
 \label{fig:sse_sil_vs_k}
 \end{figure}%
@@ -274,19 +274,20 @@ $time\_spend\_company$ ha meno variabilità riportando un picco relativamente ac
 
 \begin{figure}
 \centering
-\begin{subfigure}[b]{.33\textwidth}
+\begin{subfigure}[b]{.4\textwidth}
   \centering
   \includegraphics[width=1\textwidth]{kde_quantitative_features.png}
   \caption{intero dataset}
   \label{fig:kde_dataset}
 \end{subfigure}%
-\begin{subfigure}[b]{.33\textwidth}
+\par
+\begin{subfigure}[b]{.4\textwidth}
   \centering
   \includegraphics[width=1\textwidth]{../images/kde_within_clusters_c2.png}
   \caption{cluster 2}
   \label{fig:kde_2}
 \end{subfigure}
-\begin{subfigure}[b]{.33\textwidth}
+\begin{subfigure}[b]{.4\textwidth}
   \centering
   \includegraphics[width=1\textwidth]{../images/kde_within_clusters_c7.png}
   \caption{cluster 7}
@@ -322,7 +323,7 @@ Per la scelta di $\epsilon$, l'idea era quella di trovare il punto di gomito in 
 
 \begin{figure}[hbtp]
 
-\begin{minipage}[c]{0.6\textwidth}
+\begin{minipage}[c]{0.5\textwidth}
 \centering
 \includegraphics[width=1\columnwidth]{../images/epsilon_vs_silhouette.png}
 \end{minipage}
@@ -350,7 +351,7 @@ Il dendogramma suggerisce la presenza di 2 clusters ottenuti con una linea di ta
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=0.6\columnwidth]{../images/hierarchical_clustering_complete-annotated.png}
+\includegraphics[width=0.55\columnwidth]{../images/hierarchical_clustering_complete-annotated.png}
 \caption{Dendogramma per il metodo complete linkage. La riga verticale nera rappresenta il taglio del dendogramma a distanza $1.85$ risultante in 2 clusters.}
 \label{fig:complete_linkage}
 \end{figure}
@@ -360,7 +361,7 @@ Il dendogramma suggerisce la presenza di 2 clusters ottenuti con una linea di ta
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=0.6\columnwidth]{../images/hierarchical_clustering_average-annotated.png}
+\includegraphics[width=0.55\columnwidth]{../images/hierarchical_clustering_average-annotated.png}
 \caption{Dendogramma per il metodo average linkage. La riga che taglia il dendogramma a distanza 1 risulta in 4 clusters.}
 \label{fig:average_linkage}
 \end{figure}
@@ -370,7 +371,7 @@ Il dendogramma suggerisce la presenza di 2 clusters ottenuti con una linea di ta
 
 \begin{figure}[hbtp]
 \centering
-\includegraphics[width=0.6\columnwidth]{../images/hierarchical_clustering_ward-annotated.png}
+\includegraphics[width=0.55\columnwidth]{../images/hierarchical_clustering_ward-annotated.png}
 \caption{Dendogramma per il metodo Ward. Il taglio a distanza 15 fa ottenere 7 clusters.}
 \label{fig:ward_linkage}
 \end{figure}
@@ -497,7 +498,7 @@ Prima di procedere con l'estrazione degli itemset frequenti e delle regole di as
 
 \begin{figure}
 \center
-\includegraphics[width=0.9\linewidth]{numerical_feat_distributions_new.png}
+\includegraphics[width=0.7\linewidth]{numerical_feat_distributions_new.png}
 
 \caption{Kernel density estimation degli attributi satisfaction
 \_level e time\_spend\_company.}
@@ -991,7 +992,7 @@ Come nei precedenti modelli, la prima suddivisione del modello in figura \ref{im
   \begin{minipage}[b]{0.60\textwidth}
     \centering
 
-    \includegraphics[width=0.85\textwidth]{albero2_bis}
+    \includegraphics[width=0.75\textwidth]{albero2_bis}
     \captionof{figure}{Rappresentazione grafica del modello}
 
   \end{minipage}
@@ -1078,19 +1079,19 @@ Modello 4 & 0.973      & 0.971   & 0.972  & 0.971     & 0.962     & 0.960  & 0.9
 
 \begin{figure}[h]
 \centering
-\begin{subfigure}[b]{.45\linewidth}
+\begin{subfigure}[b]{.4\linewidth}
 \includegraphics[width=\linewidth]{modello1Conf}
 \caption{Matrice di confusione del modello 1}\label{subfig:conf1}
 \end{subfigure}
-\begin{subfigure}[b]{.45\linewidth}
+\begin{subfigure}[b]{.4\linewidth}
 \includegraphics[width=\linewidth]{modello2Conf}
 \caption{Matrice di confusione del modello 2}\label{subfig:conf2}
 \end{subfigure}
-\begin{subfigure}[b]{.45\linewidth}
+\begin{subfigure}[b]{.4\linewidth}
 \includegraphics[width=\linewidth]{modello3Conf}
 \caption{Matrice di confusione del modello 3}\label{subfig:conf3}
 \end{subfigure}
-\begin{subfigure}[b]{.45\linewidth}
+\begin{subfigure}[b]{.4\linewidth}
 \includegraphics[width=\linewidth]{modello4Conf}
 \caption{Matrice di confusione del modello 4}\label{subfig:conf4}
 \end{subfigure}
