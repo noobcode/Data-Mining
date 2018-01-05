@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.16)  4 JAN 2018 13:09
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.16)  5 JAN 2018 11:50
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -721,112 +721,113 @@ Package pdftex.def Info: ../images/sse_silhouette_vs_k.png used on input line 3
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <../images/sse_silhouette_v
 s_k.png>]
-<../images/k-centroids_analysis.png, id=15, 722.7pt x 722.7pt>
+<../images/k-centroids_analysis.png, id=15, 641.39626pt x 597.23125pt>
 File: ../images/k-centroids_analysis.png Graphic file (type png)
 
 <use ../images/k-centroids_analysis.png>
 Package pdftex.def Info: ../images/k-centroids_analysis.png used on input line 
 53.
-(pdftex.def)             Requested size: 221.0pt x 221.00212pt.
+(pdftex.def)             Requested size: 221.0pt x 205.78072pt.
 
-Underfull \vbox (badness 5064) has occurred while \output is active []
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-<../images/kde_quantitative_features.png, id=16, 433.62pt x 289.08pt>
+<../images/kde_quantitative_features.png, id=16, 392.46625pt x 270.00874pt>
 File: ../images/kde_quantitative_features.png Graphic file (type png)
 
 <use ../images/kde_quantitative_features.png>
 Package pdftex.def Info: ../images/kde_quantitative_features.png used on input 
 line 70.
-(pdftex.def)             Requested size: 135.60138pt x 90.39902pt.
+(pdftex.def)             Requested size: 135.60138pt x 93.29318pt.
 
-<../images/kde_within_clusters_c4.png, id=17, 433.62pt x 289.08pt>
+<../images/kde_within_clusters_c4.png, id=17, 398.48875pt x 272.01625pt>
 File: ../images/kde_within_clusters_c4.png Graphic file (type png)
 
 <use ../images/kde_within_clusters_c4.png>
 Package pdftex.def Info: ../images/kde_within_clusters_c4.png used on input lin
 e 76.
-(pdftex.def)             Requested size: 135.60138pt x 90.39902pt.
+(pdftex.def)             Requested size: 135.60138pt x 92.56316pt.
 
-<../images/kde_within_clusters_c7.png, id=18, 433.62pt x 289.08pt>
+<../images/kde_within_clusters_c7.png, id=18, 389.455pt x 271.0125pt>
 File: ../images/kde_within_clusters_c7.png Graphic file (type png)
 
 <use ../images/kde_within_clusters_c7.png>
 Package pdftex.def Info: ../images/kde_within_clusters_c7.png used on input lin
 e 82.
-(pdftex.def)             Requested size: 135.60138pt x 90.39902pt.
+(pdftex.def)             Requested size: 135.60138pt x 94.35954pt.
 
 Underfull \hbox (badness 3769) in paragraph at lines 90--90
 []\OT1/cmr/bx/n/10 Visualizzazione del clu-ste-ring via
  []
 
-<../images/pca_kmeans.png, id=19, 433.62pt x 289.08pt>
+<../images/pca_kmeans.png, id=19, 381.425pt x 261.97874pt>
 File: ../images/pca_kmeans.png Graphic file (type png)
 
 <use ../images/pca_kmeans.png>
 Package pdftex.def Info: ../images/pca_kmeans.png used on input line 95.
-(pdftex.def)             Requested size: 221.0pt x 147.33621pt.
+(pdftex.def)             Requested size: 221.0pt x 151.79187pt.
  [2 <../images/k-centroids_analysis.png>]
-<../images/dbscan_epsilon_selection.png, id=24, 433.62pt x 289.08pt>
+<../images/dbscan_epsilon_selection.png, id=24, 404.51125pt x 276.03125pt>
 File: ../images/dbscan_epsilon_selection.png Graphic file (type png)
 
 <use ../images/dbscan_epsilon_selection.png>
 Package pdftex.def Info: ../images/dbscan_epsilon_selection.png used on input l
 ine 112.
-(pdftex.def)             Requested size: 221.0pt x 147.33621pt.
+(pdftex.def)             Requested size: 221.0pt x 150.8068pt.
  [3 <../images/kde_quantitative_features.png> <../images/kde_within_clusters_c4
 .png> <../images/kde_within_clusters_c7.png> <../images/pca_kmeans.png>]
-<../images/epsilon_vs_silhouette.png, id=36, 433.62pt x 289.08pt>
+<../images/epsilon_vs_silhouette.png, id=36, 411.5375pt x 277.035pt>
 File: ../images/epsilon_vs_silhouette.png Graphic file (type png)
 
 <use ../images/epsilon_vs_silhouette.png>
 Package pdftex.def Info: ../images/epsilon_vs_silhouette.png used on input line
  122.
-(pdftex.def)             Requested size: 221.0pt x 147.33621pt.
+(pdftex.def)             Requested size: 221.0pt x 148.77235pt.
 
 Underfull \hbox (badness 6477) in paragraph at lines 136--136
 [][][]\OT1/cmr/m/n/8 Sono vi-sua-liz-za-ti sol-tan-to i pri-mi 3 li-vel-li dei
  []
 
 
-<../images/hierarchical_clustering_complete-annotated.png, id=37, 433.62pt x 28
-9.08pt>
+<../images/hierarchical_clustering_complete-annotated.png, id=37, 405.515pt x 2
+78.03876pt>
 File: ../images/hierarchical_clustering_complete-annotated.png Graphic file (ty
 pe png)
  <use ../images/hierarchical_clustering_complete-annotated.png>
 Package pdftex.def Info: ../images/hierarchical_clustering_complete-annotated.p
 ng used on input line 144.
-(pdftex.def)             Requested size: 221.0pt x 147.33621pt.
- [4 <../images/dbscan_epsilon_selection.png> <../images/epsilon_vs_silhouette.p
-ng>]
-<../images/hierarchical_clustering_average-annotated.png, id=43, 433.62pt x 289
-.08pt>
+(pdftex.def)             Requested size: 221.0pt x 151.53023pt.
+
+[4 <../images/dbscan_epsilon_selection.png> <../images/epsilon_vs_silhouette.pn
+g>]
+<../images/hierarchical_clustering_average-annotated.png, id=43, 394.47375pt x 
+275.0275pt>
 File: ../images/hierarchical_clustering_average-annotated.png Graphic file (typ
 e png)
  <use ../images/hierarchical_clustering_average-annotated.png>
 Package pdftex.def Info: ../images/hierarchical_clustering_average-annotated.pn
 g used on input line 154.
-(pdftex.def)             Requested size: 221.0pt x 147.33621pt.
+(pdftex.def)             Requested size: 221.0pt x 154.08148pt.
 
-<../images/hierarchical_clustering_ward-annotated.png, id=44, 433.62pt x 289.08
-pt>
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+
+<../images/hierarchical_clustering_ward-annotated.png, id=44, 389.455pt x 281.0
+5pt>
 File: ../images/hierarchical_clustering_ward-annotated.png Graphic file (type p
 ng)
  <use ../images/hierarchical_clustering_ward-annotated.png>
 Package pdftex.def Info: ../images/hierarchical_clustering_ward-annotated.png u
 sed on input line 164.
-(pdftex.def)             Requested size: 221.0pt x 147.33621pt.
+(pdftex.def)             Requested size: 221.0pt x 159.48398pt.
 
 Overfull \hbox (261.22302pt too wide) in paragraph at lines 174--186
 [][]
  []
 
-
-Underfull \vbox (badness 10000) has occurred while \output is active []
-
- [5 <../images/hierarchical_clustering_complete-annotated.png> <../images/hiera
-rchical_clustering_average-annotated.png> <../images/hierarchical_clustering_wa
-rd-annotated.png>]
+[5 <../images/hierarchical_clustering_complete-annotated.png> <../images/hierar
+chical_clustering_average-annotated.png> <../images/hierarchical_clustering_war
+d-annotated.png>]
 Package atveryend Info: Empty hook `BeforeClearDocument' on input line 205.
  [6
 
@@ -835,19 +836,15 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 205.
  (./report_cluster.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 205.
 Package atveryend Info: Empty hook `AtEndAfterFileList' on input line 205.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
  ) 
 Here is how much of TeX's memory you used:
  8230 strings out of 493029
  120518 string characters out of 6136233
- 229433 words of memory out of 5000000
+ 229432 words of memory out of 5000000
  11668 multiletter control sequences out of 15000+600000
  9957 words of font info for 39 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 44i,11n,49p,1186b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 44i,11n,49p,1189b,380s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx10.pfb></us
 r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx12.pfb></usr/shar
 e/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texl
@@ -858,7 +855,7 @@ type1/public/amsfonts/cm/cmr6.pfb></usr/share/texlive/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/ams
 fonts/cm/cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm
 /cmsy10.pfb>
-Output written on report_cluster.pdf (6 pages, 430356 bytes).
+Output written on report_cluster.pdf (6 pages, 429270 bytes).
 PDF statistics:
  86 PDF objects out of 1000 (max. 8388607)
  45 compressed objects within 1 object stream

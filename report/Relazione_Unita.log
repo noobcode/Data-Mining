@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.16)  4 JAN 2018 11:42
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2017.12.16)  5 JAN 2018 11:49
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1066,7 +1066,23 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 )
 \Hy@SectionHShift=\skip55
 )
-(./Relazione_Unita.aux)
+(./Relazione_Unita.aux
+
+LaTeX Warning: Label `fig:complete_linkage' multiply defined.
+
+
+LaTeX Warning: Label `fig:average_linkage' multiply defined.
+
+
+LaTeX Warning: Label `fig:ward_linkage' multiply defined.
+
+
+LaTeX Warning: Label `fig:kde_clusters' multiply defined.
+
+
+LaTeX Warning: Label `fig:test' multiply defined.
+
+)
 \openout1 = `Relazione_Unita.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 51.
@@ -1085,8 +1101,7 @@ LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 51.
 LaTeX Font Info:    ... okay on input line 51.
 LaTeX Info: Redefining \it@ocap on input line 51.
 LaTeX Info: Redefining \it@ccap on input line 51.
-
-(/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
+ (/usr/share/texlive/texmf-dist/tex/context/base/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count161
 \scratchdimen=\dimen261
@@ -1173,12 +1188,12 @@ LaTeX Info: Redefining \nameref on input line 51.
 \@outlinefile=\write4
 \openout4 = `Relazione_Unita.out'.
 
-LaTeX Font Info:    Try loading font information for U+msa on input line 53.
+LaTeX Font Info:    Try loading font information for U+msa on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 53.
+LaTeX Font Info:    Try loading font information for U+msb on input line 54.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
@@ -1190,515 +1205,683 @@ File: umsb.fd 2013/01/14 v3.01 AMS symbols B
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Underfull \hbox (badness 3942) in paragraph at lines 92--92
+Underfull \hbox (badness 3942) in paragraph at lines 93--93
 []|\T1/cmr/m/n/10 Numero di an-ni tra-scor-si
  []
 
 
-Underfull \hbox (badness 2452) in paragraph at lines 92--92
+Underfull \hbox (badness 2452) in paragraph at lines 93--93
 []|\T1/cmr/m/n/10 Dipartimento per il qua-le
  []
 
 
-Overfull \hbox (4.44911pt too wide) in paragraph at lines 120--120
+Overfull \hbox (4.44911pt too wide) in paragraph at lines 121--121
 []|\T1/cmr/m/n/10 satisfaction
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []|\T1/cmr/m/n/10 last
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []|\T1/cmr/m/n/10 number
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []|\T1/cmr/m/n/10 average
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 \T1/cmr/m/n/10 mon-tly
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 []|\T1/cmr/m/n/10 time
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 \T1/cmr/m/n/10 spend
  []
 
 
-Underfull \hbox (badness 2818) in paragraph at lines 120--120
+Underfull \hbox (badness 2818) in paragraph at lines 121--121
 []|\T1/cmr/m/n/10 Work ac-
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 120--120
+Underfull \hbox (badness 10000) in paragraph at lines 121--121
 \T1/cmr/m/n/10 la-st
  []
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<distribution_categoricals_large.png, id=121, 917.4275pt x 459.7175pt>
+<distribution_categoricals_large.png, id=171, 917.4275pt x 459.7175pt>
 File: distribution_categoricals_large.png Graphic file (type png)
 
 <use distribution_categoricals_large.png>
 Package pdftex.def Info: distribution_categoricals_large.png used on input line
- 129.
+ 130.
 (pdftex.def)             Requested size: 435.3303pt x 218.1436pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 130.
+(caption)                particular \caption on input line 131.
 See the caption package documentation for explanation.
 
 [2]
-LaTeX Font Info:    Try loading font information for T1+cmtt on input line 134.
+LaTeX Font Info:    Try loading font information for T1+cmtt on input line 135.
 
  (/usr/share/texlive/texmf-dist/tex/latex/base/t1cmtt.fd
 File: t1cmtt.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
-<distribution_numericals_large.png, id=142, 931.48pt x 406.51875pt>
+<distribution_numericals_large.png, id=193, 931.48pt x 406.51875pt>
 File: distribution_numericals_large.png Graphic file (type png)
 
 <use distribution_numericals_large.png>
 Package pdftex.def Info: distribution_numericals_large.png used on input line 1
-38.
+39.
 (pdftex.def)             Requested size: 460.93153pt x 201.16226pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 139.
+(caption)                particular \caption on input line 140.
 See the caption package documentation for explanation.
 
-LaTeX Font Info:    Try loading font information for OMS+cmr on input line 150.
+LaTeX Font Info:    Try loading font information for OMS+cmr on input line 151.
 
 (/usr/share/texlive/texmf-dist/tex/latex/base/omscmr.fd
 File: omscmr.fd 2014/09/29 v2.5h Standard LaTeX font definitions
 )
 LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <10> not available
-(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 150.
+(Font)              Font shape `OMS/cmsy/m/n' tried instead on input line 151.
  [3 <./distribution_categoricals_large.png> <./distribution_numericals_large.pn
 g>]
-<distributions_by_left.png, id=154, 1369.115pt x 577.15625pt>
+<distributions_by_left.png, id=205, 1369.115pt x 577.15625pt>
 File: distributions_by_left.png Graphic file (type png)
 
 <use distributions_by_left.png>
-Package pdftex.def Info: distributions_by_left.png used on input line 162.
+Package pdftex.def Info: distributions_by_left.png used on input line 163.
 (pdftex.def)             Requested size: 460.93153pt x 194.30186pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 163.
+(caption)                particular \caption on input line 164.
 See the caption package documentation for explanation.
 
-<time_spent_by_sales.png, id=157, 506.89375pt x 322.20375pt>
+<time_spent_by_sales.png, id=208, 506.89375pt x 322.20375pt>
 File: time_spent_by_sales.png Graphic file (type png)
 
 <use time_spent_by_sales.png>
-Package pdftex.def Info: time_spent_by_sales.png used on input line 178.
+Package pdftex.def Info: time_spent_by_sales.png used on input line 179.
 (pdftex.def)             Requested size: 256.07481pt x 162.77306pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 179.
+(caption)                particular \caption on input line 180.
 See the caption package documentation for explanation.
 
-<left_by_salary.png, id=158, 390.45876pt x 299.1175pt>
+<left_by_salary.png, id=209, 390.45876pt x 299.1175pt>
 File: left_by_salary.png Graphic file (type png)
 
 <use left_by_salary.png>
-Package pdftex.def Info: left_by_salary.png used on input line 186.
+Package pdftex.def Info: left_by_salary.png used on input line 187.
 (pdftex.def)             Requested size: 230.46576pt x 176.55081pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 187.
+(caption)                particular \caption on input line 188.
 See the caption package documentation for explanation.
 
 [4 <./distributions_by_left.png> <./time_spent_by_sales.png> <./left_by_salary.
-png>] <box_plots.png, id=170, 1174.3875pt x 588.1975pt>
+png>] <box_plots.png, id=221, 1174.3875pt x 588.1975pt>
 File: box_plots.png Graphic file (type png)
  <use box_plots.png>
-Package pdftex.def Info: box_plots.png used on input line 202.
+Package pdftex.def Info: box_plots.png used on input line 203.
 (pdftex.def)             Requested size: 409.72125pt x 205.20804pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 203.
+(caption)                particular \caption on input line 204.
 See the caption package documentation for explanation.
 
-<corr_heatmap.png, id=178, 470.75874pt x 332.24126pt>
+<corr_heatmap.png, id=229, 470.75874pt x 332.24126pt>
 File: corr_heatmap.png Graphic file (type png)
  <use corr_heatmap.png>
-Package pdftex.def Info: corr_heatmap.png used on input line 223.
+Package pdftex.def Info: corr_heatmap.png used on input line 224.
 (pdftex.def)             Requested size: 358.50317pt x 253.01799pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 224.
+(caption)                particular \caption on input line 225.
 See the caption package documentation for explanation.
 
-[5 <./box_plots.png>] [6 <./corr_heatmap.png>]
-<numerical_feat_distributions_new.png, id=202, 779.91376pt x 287.0725pt>
+[5 <./box_plots.png>]
+Underfull \hbox (badness 7704) in paragraph at lines 235--240
+\T1/cmr/m/n/10 Si so-no scel-ti gli at-tri-bu-ti quan-ti-ta-ti-vi ($\OML/cmm/m/
+it/10 satisfaction[]level$\T1/cmr/m/n/10 , $\OML/cmm/m/it/10 last[]evaluation$\
+T1/cmr/m/n/10 , $\OML/cmm/m/it/10 average[]montly[]hours$\T1/cmr/m/n/10 ,
+ []
+
+<../images/sse_silhouette_vs_k.png, id=243, 433.62pt x 289.08pt>
+File: ../images/sse_silhouette_vs_k.png Graphic file (type png)
+
+<use ../images/sse_silhouette_vs_k.png>
+Package pdftex.def Info: ../images/sse_silhouette_vs_k.png used on input line 2
+48.
+(pdftex.def)             Requested size: 307.2929pt x 204.87329pt.
+ [6 <./corr_heatmap.png>]
+<../images/k-centroids_analysis.png, id=253, 641.39626pt x 597.23125pt>
+File: ../images/k-centroids_analysis.png Graphic file (type png)
+
+<use ../images/k-centroids_analysis.png>
+Package pdftex.def Info: ../images/k-centroids_analysis.png used on input line 
+269.
+(pdftex.def)             Requested size: 330.01447pt x 307.2929pt.
+
+
+Package caption Warning: \label without proper reference on input line 292.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:kde_4' on page 7 undefined on input line 276.
+
+
+Package caption Warning: \label without proper reference on input line 297.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:kde_7' on page 7 undefined on input line 276.
+
+<../images/kde_quantitative_features.png, id=257, 392.46625pt x 270.00874pt>
+File: ../images/kde_quantitative_features.png Graphic file (type png)
+
+<use ../images/kde_quantitative_features.png>
+Package pdftex.def Info: ../images/kde_quantitative_features.png used on input 
+line 286.
+(pdftex.def)             Requested size: 169.0103pt x 116.27864pt.
+
+<../images/kde_within_clusters_c4.png, id=258, 398.48875pt x 272.01625pt>
+File: ../images/kde_within_clusters_c4.png Graphic file (type png)
+
+<use ../images/kde_within_clusters_c4.png>
+Package pdftex.def Info: ../images/kde_within_clusters_c4.png used on input lin
+e 291.
+(pdftex.def)             Requested size: 169.0103pt x 115.36671pt.
+
+<../images/kde_within_clusters_c7.png, id=259, 389.455pt x 271.0125pt>
+File: ../images/kde_within_clusters_c7.png Graphic file (type png)
+
+<use ../images/kde_within_clusters_c7.png>
+Package pdftex.def Info: ../images/kde_within_clusters_c7.png used on input lin
+e 296.
+(pdftex.def)             Requested size: 169.0103pt x 117.60828pt.
+
+<../images/pca_kmeans.png, id=266, 381.425pt x 261.97874pt>
+File: ../images/pca_kmeans.png Graphic file (type png)
+
+<use ../images/pca_kmeans.png>
+Package pdftex.def Info: ../images/pca_kmeans.png used on input line 312.
+(pdftex.def)             Requested size: 256.07481pt x 175.88861pt.
+ [7 <../images/sse_silhouette_vs_k.png>] [8 <../images/k-centroids_analysis.png
+> <../images/kde_quantitative_features.png> <../images/kde_within_clusters_c4.p
+ng> <../images/kde_within_clusters_c7.png> <../images/pca_kmeans.png>]
+<../images/dbscan_epsilon_selection.png, id=294, 404.51125pt x 276.03125pt>
+File: ../images/dbscan_epsilon_selection.png Graphic file (type png)
+
+<use ../images/dbscan_epsilon_selection.png>
+Package pdftex.def Info: ../images/dbscan_epsilon_selection.png used on input l
+ine 329.
+(pdftex.def)             Requested size: 256.07481pt x 174.74298pt.
+
+<../images/epsilon_vs_silhouette.png, id=298, 411.5375pt x 277.035pt>
+File: ../images/epsilon_vs_silhouette.png Graphic file (type png)
+
+<use ../images/epsilon_vs_silhouette.png>
+Package pdftex.def Info: ../images/epsilon_vs_silhouette.png used on input line
+ 341.
+(pdftex.def)             Requested size: 307.2929pt x 206.86266pt.
+
+Overfull \hbox (2.22166pt too wide) in paragraph at lines 339--348
+[]$[]$  $[]$ 
+ []
+
+[9 <../images/dbscan_epsilon_selection.png> <../images/epsilon_vs_silhouette.pn
+g>]
+
+Package caption Warning: \label without proper reference on input line 397.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:complete_linkage' on page 10 undefined on input l
+ine 362.
+
+
+<../images/hierarchical_clustering_complete-annotated.png, id=317, 405.515pt x 
+278.03876pt>
+File: ../images/hierarchical_clustering_complete-annotated.png Graphic file (ty
+pe png)
+ <use ../images/hierarchical_clustering_complete-annotated.png>
+Package pdftex.def Info: ../images/hierarchical_clustering_complete-annotated.p
+ng used on input line 367.
+(pdftex.def)             Requested size: 307.2929pt x 210.69647pt.
+
+
+Package caption Warning: \label without proper reference on input line 402.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:average_linkage' on page 10 undefined on input li
+ne 373.
+
+
+<../images/hierarchical_clustering_average-annotated.png, id=319, 394.47375pt x
+ 275.0275pt>
+File: ../images/hierarchical_clustering_average-annotated.png Graphic file (typ
+e png)
+ <use ../images/hierarchical_clustering_average-annotated.png>
+Package pdftex.def Info: ../images/hierarchical_clustering_average-annotated.pn
+g used on input line 377.
+(pdftex.def)             Requested size: 307.2929pt x 214.2436pt.
+
+
+Package caption Warning: \label without proper reference on input line 408.
+See the caption package documentation for explanation.
+
+
+LaTeX Warning: Reference `fig:ward_linkage' on page 10 undefined on input line 
+383.
+
+
+<../images/hierarchical_clustering_ward-annotated.png, id=321, 389.455pt x 281.
+05pt>
+File: ../images/hierarchical_clustering_ward-annotated.png Graphic file (type p
+ng)
+ <use ../images/hierarchical_clustering_ward-annotated.png>
+Package pdftex.def Info: ../images/hierarchical_clustering_ward-annotated.png u
+sed on input line 387.
+(pdftex.def)             Requested size: 307.2929pt x 221.76546pt.
+ [10 <../images/hierarchical_clustering_complete-annotated.png>] [11 <../images
+/hierarchical_clustering_average-annotated.png> <../images/hierarchical_cluster
+ing_ward-annotated.png>] [12]
+<numerical_feat_distributions_new.png, id=361, 779.91376pt x 287.0725pt>
 File: numerical_feat_distributions_new.png Graphic file (type png)
 
 <use numerical_feat_distributions_new.png>
 Package pdftex.def Info: numerical_feat_distributions_new.png used on input lin
-e 280.
-(pdftex.def)             Requested size: 512.14963pt x 188.51788pt.
-
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
+e 507.
+(pdftex.def)             Requested size: 460.93153pt x 169.6604pt.
+ [13 <./numerical_feat_distributions_new.png>]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[7 <./numerical_feat_distributions_new.png>]
+[14] [15] [16]
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[8] [9]
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-[10] [11] <albero4.png, id=250, 818.05624pt x 420.57124pt>
+[17] <albero4.png, id=412, 818.05624pt x 420.57124pt>
 File: albero4.png Graphic file (type png)
  <use albero4.png>
-Package pdftex.def Info: albero4.png used on input line 703.
+Package pdftex.def Info: albero4.png used on input line 930.
 (pdftex.def)             Requested size: 332.89412pt x 171.14543pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 704.
+(caption)                particular \caption on input line 931.
 See the caption package documentation for explanation.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.704 ...re}{Rappresentazione grafica del modello}
+l.931 ...re}{Rappresentazione grafica del modello}
                                                   
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 720.
+(caption)                particular \caption on input line 947.
 See the caption package documentation for explanation.
 
-[12 <./albero4.png>] <albero3.png, id=261, 1016.79875pt x 537.00626pt>
+[18 <./albero4.png>] <albero3.png, id=422, 1016.79875pt x 537.00626pt>
 File: albero3.png Graphic file (type png)
 
 <use albero3.png>
-Package pdftex.def Info: albero3.png used on input line 738.
+Package pdftex.def Info: albero3.png used on input line 965.
 (pdftex.def)             Requested size: 332.89412pt x 175.81143pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 739.
+(caption)                particular \caption on input line 966.
 See the caption package documentation for explanation.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.739 ...re}{Rappresentazione grafica del modello}
+l.966 ...re}{Rappresentazione grafica del modello}
                                                   
-Overfull \hbox (5.37468pt too wide) in paragraph at lines 754--754
+Overfull \hbox (5.37468pt too wide) in paragraph at lines 981--981
 []|\T1/cmr/m/n/10 entropy| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 754--754
+Underfull \hbox (badness 10000) in paragraph at lines 981--981
 []|\T1/cmr/m/n/10 not
  []
 
 
-Overfull \hbox (2.01439pt too wide) in paragraph at lines 754--754
+Overfull \hbox (2.01439pt too wide) in paragraph at lines 981--981
 \T1/cmr/m/n/10 left=1,
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 755.
+(caption)                particular \caption on input line 982.
 See the caption package documentation for explanation.
 
-<albero2_bis.png, id=263, 590.205pt x 537.00626pt>
+<albero2_bis.png, id=424, 590.205pt x 537.00626pt>
 File: albero2_bis.png Graphic file (type png)
  <use albero2_bis.png>
-Package pdftex.def Info: albero2_bis.png used on input line 774.
+Package pdftex.def Info: albero2_bis.png used on input line 1001.
 (pdftex.def)             Requested size: 261.20082pt x 237.66008pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 775.
+(caption)                particular \caption on input line 1002.
 See the caption package documentation for explanation.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.775 ...re}{Rappresentazione grafica del modello}
+l.1002 ...e}{Rappresentazione grafica del modello}
                                                   
-Overfull \hbox (5.37468pt too wide) in paragraph at lines 791--791
+Overfull \hbox (5.37468pt too wide) in paragraph at lines 1018--1018
 []|\T1/cmr/m/n/10 entropy| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 1018--1018
 []|\T1/cmr/m/n/10 not
  []
 
 
-Overfull \hbox (2.01439pt too wide) in paragraph at lines 791--791
+Overfull \hbox (2.01439pt too wide) in paragraph at lines 1018--1018
 \T1/cmr/m/n/10 left=1,
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 792.
+(caption)                particular \caption on input line 1019.
 See the caption package documentation for explanation.
 
-[13 <./albero3.png> <./albero2_bis.png>]
-<albero1.png, id=276, 1079.03125pt x 537.00626pt>
+[19 <./albero3.png>] <albero1.png, id=435, 1079.03125pt x 537.00626pt>
 File: albero1.png Graphic file (type png)
- <use albero1.png>
-Package pdftex.def Info: albero1.png used on input line 810.
+
+<use albero1.png>
+Package pdftex.def Info: albero1.png used on input line 1037.
 (pdftex.def)             Requested size: 332.89412pt x 165.67538pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 811.
+(caption)                particular \caption on input line 1038.
 See the caption package documentation for explanation.
 
 pdfTeX warning (ext4): destination with the same identifier (name{figure.4}) ha
 s been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.811 ...re}{Rappresentazione grafica del modello}
+l.1038 ...e}{Rappresentazione grafica del modello}
                                                   
-Underfull \hbox (badness 10000) in paragraph at lines 826--826
+Underfull \hbox (badness 10000) in paragraph at lines 1053--1053
 []|\T1/cmr/m/n/10 not
  []
 
 
-Overfull \hbox (2.01439pt too wide) in paragraph at lines 826--826
+Overfull \hbox (2.01439pt too wide) in paragraph at lines 1053--1053
 \T1/cmr/m/n/10 left=1,
  []
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 827.
+(caption)                particular \caption on input line 1054.
 See the caption package documentation for explanation.
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 834--835
+Underfull \hbox (badness 10000) in paragraph at lines 1061--1062
 
  []
 
 
-Overfull \hbox (2.50392pt too wide) in paragraph at lines 851--851
+Overfull \hbox (2.50392pt too wide) in paragraph at lines 1078--1078
 []|\T1/cmr/m/n/10 precision| 
  []
 
 
-Overfull \hbox (2.17067pt too wide) in paragraph at lines 851--851
+Overfull \hbox (2.17067pt too wide) in paragraph at lines 1078--1078
 []|\T1/cmr/m/n/10 accuracy| 
  []
 
 
-Overfull \hbox (2.50392pt too wide) in paragraph at lines 851--851
+Overfull \hbox (2.50392pt too wide) in paragraph at lines 1078--1078
 []|\T1/cmr/m/n/10 precision| 
  []
 
 
-Overfull \hbox (2.17067pt too wide) in paragraph at lines 851--851
+Overfull \hbox (2.17067pt too wide) in paragraph at lines 1078--1078
 []|\T1/cmr/m/n/10 accuracy| 
  []
 
-<modello1Conf.png, id=279, 348.30125pt x 295.1025pt>
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<modello1Conf.png, id=438, 348.30125pt x 295.1025pt>
 File: modello1Conf.png Graphic file (type png)
  <use modello1Conf.png>
-Package pdftex.def Info: modello1Conf.png used on input line 862.
+Package pdftex.def Info: modello1Conf.png used on input line 1089.
 (pdftex.def)             Requested size: 230.46576pt x 195.26355pt.
 
-<modello2Conf.png, id=280, 348.30125pt x 295.1025pt>
+<modello2Conf.png, id=439, 348.30125pt x 295.1025pt>
 File: modello2Conf.png Graphic file (type png)
  <use modello2Conf.png>
-Package pdftex.def Info: modello2Conf.png used on input line 866.
+Package pdftex.def Info: modello2Conf.png used on input line 1093.
 (pdftex.def)             Requested size: 230.46576pt x 195.26355pt.
 
-<modello3Conf.png, id=281, 348.30125pt x 295.1025pt>
+<modello3Conf.png, id=440, 348.30125pt x 295.1025pt>
 File: modello3Conf.png Graphic file (type png)
  <use modello3Conf.png>
-Package pdftex.def Info: modello3Conf.png used on input line 870.
+Package pdftex.def Info: modello3Conf.png used on input line 1097.
 (pdftex.def)             Requested size: 230.46576pt x 195.26355pt.
 
-<modello4Conf.png, id=282, 348.30125pt x 295.1025pt>
+<modello4Conf.png, id=441, 348.30125pt x 295.1025pt>
 File: modello4Conf.png Graphic file (type png)
  <use modello4Conf.png>
-Package pdftex.def Info: modello4Conf.png used on input line 874.
+Package pdftex.def Info: modello4Conf.png used on input line 1101.
 (pdftex.def)             Requested size: 230.46576pt x 195.26355pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-[14 <./albero1.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 892--893
+[20 <./albero2_bis.png> <./albero1.png>]
+Underfull \hbox (badness 10000) in paragraph at lines 1119--1120
 
  []
 
 
-Overfull \hbox (5.2389pt too wide) in paragraph at lines 914--914
+Overfull \hbox (5.2389pt too wide) in paragraph at lines 1141--1141
 []|\T1/cmr/bx/n/10 Parametro| 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 914--914
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1141
 []|\T1/cmr/bx/n/10 Valore
  []
 
 
-Overfull \hbox (3.35742pt too wide) in paragraph at lines 914--914
+Overfull \hbox (3.35742pt too wide) in paragraph at lines 1141--1141
 []|\T1/cmr/m/n/10 max_depth| 
  []
 
 
-Overfull \hbox (10.41125pt too wide) in paragraph at lines 914--914
+Overfull \hbox (10.41125pt too wide) in paragraph at lines 1141--1141
 []|\T1/cmr/m/n/10 min_samples
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 914--914
+Underfull \hbox (badness 2334) in paragraph at lines 1141--1141
 []|\T1/cmr/m/n/10 [2, 3, ...,
  []
 
 
-Overfull \hbox (10.41125pt too wide) in paragraph at lines 914--914
+Overfull \hbox (10.41125pt too wide) in paragraph at lines 1141--1141
 []|\T1/cmr/m/n/10 min_samples
  []
 
 
-Underfull \hbox (badness 2334) in paragraph at lines 914--914
+Underfull \hbox (badness 2334) in paragraph at lines 1141--1141
 []|\T1/cmr/m/n/10 [2, 3, ...,
  []
 
 
-Overfull \hbox (8.18958pt too wide) in paragraph at lines 914--914
+Overfull \hbox (8.18958pt too wide) in paragraph at lines 1141--1141
 []|\T1/cmr/m/n/10 class_weight| 
  []
 
 
-Overfull \hbox (10.57788pt too wide) in paragraph at lines 914--914
+Overfull \hbox (10.57788pt too wide) in paragraph at lines 1141--1141
 []|\T1/cmr/m/n/10 [(not_left=1,
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 914--914
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1141
 \T1/cmr/m/n/10 left=4),
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 914--914
+Underfull \hbox (badness 10000) in paragraph at lines 1141--1141
 \T1/cmr/m/n/10 No-ne,
  []
 
-<feat_imp_best_model.png, id=298, 481.8pt x 263.98625pt>
+<feat_imp_best_model.png, id=460, 481.8pt x 263.98625pt>
 File: feat_imp_best_model.png Graphic file (type png)
 
 <use feat_imp_best_model.png>
-Package pdftex.def Info: feat_imp_best_model.png used on input line 923.
+Package pdftex.def Info: feat_imp_best_model.png used on input line 1150.
 (pdftex.def)             Requested size: 281.68385pt x 154.34473pt.
 
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-
-LaTeX Warning: `h' float specifier changed to `ht'.
-
-<best_model_representation.png, id=299, 1011.78pt x 537.00626pt>
+<best_model_representation.png, id=461, 1011.78pt x 537.00626pt>
 File: best_model_representation.png Graphic file (type png)
 
 <use best_model_representation.png>
-Package pdftex.def Info: best_model_representation.png used on input line 950.
+Package pdftex.def Info: best_model_representation.png used on input line 1177.
+
 (pdftex.def)             Requested size: 358.50317pt x 190.2821pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 951.
+(caption)                particular \caption on input line 1178.
 See the caption package documentation for explanation.
 
-[15 <./modello1Conf.png> <./modello2Conf.png> <./modello3Conf.png> <./modello4C
-onf.png>]pdfTeX warning (ext4): destination with the same identifier (name{figu
-re.7}) has been already used, duplicate ignored
+[21 <./feat_imp_best_model.png>]pdfTeX warning (ext4): destination with the sam
+e identifier (name{figure.7}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.951 ...entazione grafica del modello \textit{M}}
+l.1178 ...ntazione grafica del modello \textit{M}}
                                                   
-<roc_curves.png, id=311, 425.59pt x 281.05pt>
+<roc_curves.png, id=472, 425.59pt x 281.05pt>
 File: roc_curves.png Graphic file (type png)
  <use roc_curves.png>
-Package pdftex.def Info: roc_curves.png used on input line 954.
+Package pdftex.def Info: roc_curves.png used on input line 1181.
 (pdftex.def)             Requested size: 256.07481pt x 169.11589pt.
 
 
 Package caption Warning: The option `hypcap=true' will be ignored for this
-(caption)                particular \caption on input line 955.
+(caption)                particular \caption on input line 1182.
 See the caption package documentation for explanation.
 
-[16 <./feat_imp_best_model.png> <./best_model_representation.png> <./roc_curves
-.png>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 974.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 974.
- (./Relazione_Unita.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 974.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 974.
+[22 <./modello1Conf.png> <./modello2Conf.png> <./modello3Conf.png> <./modello4C
+onf.png> <./best_model_representation.png>] [23 <./roc_curves.png>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 1201.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 1201.
+
+(./Relazione_Unita.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 1201.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 1201.
+
 Package rerunfilecheck Info: File `Relazione_Unita.out' has not changed.
-(rerunfilecheck)             Checksum: 9250920BF46133EFDF698FCE699B480C;1556.
+(rerunfilecheck)             Checksum: 3E714784983BC215427EA1C01B7155A7;2512.
 
 
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+LaTeX Warning: There were undefined references.
+
+
+LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
- 19926 strings out of 493029
- 358233 string characters out of 6136233
- 466353 words of memory out of 5000000
- 22971 multiletter control sequences out of 15000+600000
- 21004 words of font info for 56 fonts, out of 8000000 for 9000
+ 20077 strings out of 493029
+ 361962 string characters out of 6136233
+ 469434 words of memory out of 5000000
+ 23054 multiletter control sequences out of 15000+600000
+ 23315 words of font info for 63 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 62i,13n,77p,1568b,564s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texliv
-e/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/
-fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/t
-ype1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/pub
-lic/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/am
-sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/
-symbols/msbm10.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx0900.pfb><
-/usr/share/texmf/fonts/type1/public/cm-super/sfbx1000.pfb></usr/share/texmf/fon
-ts/type1/public/cm-super/sfbx1200.pfb></usr/share/texmf/fonts/type1/public/cm-s
-uper/sfbx1440.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0600.pfb></
-usr/share/texmf/fonts/type1/public/cm-super/sfrm0700.pfb></usr/share/texmf/font
-s/type1/public/cm-super/sfrm0800.pfb></usr/share/texmf/fonts/type1/public/cm-su
-per/sfrm0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1000.pfb></u
-sr/share/texmf/fonts/type1/public/cm-super/sfrm1200.pfb></usr/share/texmf/fonts
-/type1/public/cm-super/sfrm1728.pfb></usr/share/texmf/fonts/type1/public/cm-sup
-er/sfti0900.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfti1000.pfb></us
-r/share/texmf/fonts/type1/public/cm-super/sftt1000.pfb>
-Output written on Relazione_Unita.pdf (16 pages, 1008533 bytes).
+ 62i,14n,93p,1568b,558s stack positions out of 5000i,500n,10000p,200000b,80000s
+pdfTeX warning (dest): name{table.caption.47} has been referenced but does no
+t exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.45} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.44} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.39} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{table.caption.27} has been referenced but does not 
+exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.28} has been referenced but does not
+ exist, replaced by a fixed one
+
+pdfTeX warning (dest): name{figure.caption.23} has been referenced but does not
+ exist, replaced by a fixed one
+
+{/usr/share/texmf/fonts/enc/dvips/cm-super/cm-super-t1.enc}</usr/share/texlive/
+texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/share/texlive/texmf-
+dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/texmf-dist/fo
+nts/type1/public/amsfonts/cm/cmmi8.pfb></usr/share/texlive/texmf-dist/fonts/typ
+e1/public/amsfonts/cm/cmmi9.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
+ic/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsf
+onts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
+cmr8.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr
+/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy7.pfb></usr/share/
+texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/share/texlive
+/texmf-dist/fonts/type1/public/amsfonts/symbols/msbm10.pfb></usr/share/texmf/fo
+nts/type1/public/cm-super/sfbx0900.pfb></usr/share/texmf/fonts/type1/public/cm-
+super/sfbx1000.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfbx1200.pfb><
+/usr/share/texmf/fonts/type1/public/cm-super/sfbx1440.pfb></usr/share/texmf/fon
+ts/type1/public/cm-super/sfrm0600.pfb></usr/share/texmf/fonts/type1/public/cm-s
+uper/sfrm0700.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm0800.pfb></
+usr/share/texmf/fonts/type1/public/cm-super/sfrm0900.pfb></usr/share/texmf/font
+s/type1/public/cm-super/sfrm1000.pfb></usr/share/texmf/fonts/type1/public/cm-su
+per/sfrm1200.pfb></usr/share/texmf/fonts/type1/public/cm-super/sfrm1728.pfb></u
+sr/share/texmf/fonts/type1/public/cm-super/sfti0900.pfb></usr/share/texmf/fonts
+/type1/public/cm-super/sfti1000.pfb></usr/share/texmf/fonts/type1/public/cm-sup
+er/sftt1000.pfb>
+Output written on Relazione_Unita.pdf (23 pages, 1396442 bytes).
 PDF statistics:
- 406 PDF objects out of 1000 (max. 8388607)
- 325 compressed objects within 4 object streams
- 75 named destinations out of 1000 (max. 500000)
- 268 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 599 PDF objects out of 1000 (max. 8388607)
+ 480 compressed objects within 5 object streams
+ 126 named destinations out of 1000 (max. 500000)
+ 403 words of extra memory for PDF output out of 10000 (max. 10000000)
 

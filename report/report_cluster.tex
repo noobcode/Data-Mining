@@ -11,7 +11,7 @@
 \begin{document}
 
 \section{Analisi dei cluster}
-L'analisi dei clusters è stata svolta normalizzando i valori degli attributi tra 0 e 1, con lo scopo di standardizzare il contributo del valore degli attributi nel calcolo della distanza.
+L'analisi dei clusters è stata svolta normalizzando i valori degli attributi tra 0 e 1, con lo scopo di standardizzare il contributo del valore degli attributi nel calcolo della distanza.%%
 
 \subsection{clustering via K-means}
 \subsubsection{Scelta degli attributi e della funzione distanza}
@@ -25,7 +25,7 @@ L'interpretazione è stata che se $number\_project$ ha valore frazionario $d.f$ 
 La funzione distanza scelta è stata la distanza Euclidea perché i centroidi sono medie nello spazio Euclideo in $\Re^{n}$, dove $n$ è il numero di attributi. Inoltre il valore  della distanza tra 2 punti è di più facile interpretazione rispetto ad altre metriche. 
 
 \subsubsection{Identificazione del miglior valore di k} \label{trovare_valore_di_k}
-Identificare il numero di clusters è importante per trovare un compromesso tra pochi grandi clusters e molti piccoli, e spesso insignificanti, clusters. Per indentificare il miglior valore di $k$ per l'algoritmo K-means si è monitorato l'andamento della $Sum\ of\ Squared\ Error\ (SSE)$ e la $silhouette\ score$ al variare di $k$, il cui grafico è riportato in \autoref{fig:sse_sil_vs_k}. Il grafico della $SSE$ ha un andamento non-crescente e diminuisce in maniera smooth, mentre la silhouette presenta molti picchi.
+Identificare il numero di clusters è importante per trovare un compromesso tra pochi grandi clusters e molti piccoli, e spesso insignificanti, clusters. Per indentificare il miglior valore di $k$ per l'algoritmo K-means si è monitorato l'andamento della $Sum\ of\ Squared\ Error\ (SSE)$ e la $silhouette\ score$ al variare di $k$, il cui grafico è riportato in \autoref{fig:sse_sil_vs_k}. Il grafico della $SSE$ ha un andamento non-crescente e diminuisce in maniera smooth, mentre la silhouette presenta molti picchi.%%
 
 \begin{figure}[hbtp]
 \centering
@@ -39,13 +39,13 @@ Identificare il numero di clusters è importante per trovare un compromesso tra 
 Sucessivamente si è scelto il punto di gomito della $SSE$ combinando un approccio visivo ad uno quantitativo, analizzando i punti $k$ in cui era presente un maggior calo di $SSE$. La scelta finale per il valore di $k$ ha preso in considerazione anche il corrispondente valore della $silhouette$. La $silhouette$ assumeva valori nel range $\left[0.18, 0.28\right]$ con minimo per $k=47$ e massimo per $k=3$, mentre la $SSE$ assumeva valori tra $\left[640, 3315\right]$ con minimo per $k=50$ e massimo per $k=2$. Inoltre, sono stati presi in considerazione i top 10 valori di $k$ corrispondenti a un maggiore calo della $SSE$ ($top\_diffs$). Analogamente sono stati presi i top 10 $k$ con maggiore $silhouette$ ($top\_silho$). Si sono ottenuti i seguenti insiemi di valori di $k$, candidati ad essere punti di gomito: $top\_diffs=\lbrace3,4,5,6,7,8,9,10,11,12\rbrace$ and $top\_silho=\lbrace3,8,14,7,6,10,5,9,4,18\rbrace$. Mettendo insieme tutte le precendenti informazioni e considerando l'insieme $top\_diffs \cap top\_silho$, si è scelto il punto di gomito $k=8$, corrispondente a $SSE=1474$ and $silhouette=0.274$.
 
 \paragraph{}
-Alternativamente, scegliendo il punto del grafico della $SSE$ più vicino all'origine in norma Euclidea, si era ottenuto il punto $k=12$, con $SSE=1210$ e $silhouette=0.257$.
+Alternativamente, scegliendo il punto del grafico della $SSE$ più vicino all'origine in norma Euclidea, si era ottenuto il punto $k=12$, con $SSE=1210$ e $silhouette=0.257$. %%
 
 \subsubsection{Caratterizzazione dei clusters ottenuti}
 La caratterizzazione dei cluster ottenuti è stata svolta per mezzo dell'analisi dei centroidi, e confrontando le distribuzioni degli attributi dei singoli cluster con quelle dell'intero dataset.
 % analisi per centroidi
 \paragraph{}
-La \autoref{fig:centroids} riporta l'analisi per centroidi. Gli attributi dei centroidi dei clusters 1 e 3 hanno relativamente lo stesso andamento. In particolare i valori di $average\_montly\_hours$ differiscono di poco. Questo significa che per valori più piccoli di $k$ i due clusters potrebbero unirsi. I clusters 4, 5 e 7 sono caratterizzati da un basso valore di $satisfaction\_level$, mentre lo stesso attributo assume valori elevati nei clusters 0, 1, 3 e 6. Il cluster 6 è l'unico con un alto valore di $time\_spend\_company$, mentre per il resto dei clusters l'attributo assume valori bassi. Questo ci dice che i due attributi non sono correlati, altrimenti anche i clusters 0, 1 e 3 avrebbero avuto un alto valore di $time\_spend\_company$. Il cluster 4 ha il più basso valore di $satisfaction\_level$ e il più alto valore di  $average\_montly\_hours$. Inoltre, il cluster 4 ha il più alto valore di $number\_projects$ e un relativamente basso valore di $time\_spend\_company$. Questo significa che il sovraccarico di lavoro dovuto ad una grande quantità di progetti, svolti in poco tempo, porta gli impiegati ad essere infelici.
+La \autoref{fig:centroids} riporta l'analisi per centroidi. Gli attributi dei centroidi dei clusters 1 e 3 hanno relativamente lo stesso andamento. In particolare i valori di $average\_montly\_hours$ differiscono di poco. Questo significa che per valori più piccoli di $k$ i due clusters potrebbero unirsi. I clusters 4, 5 e 7 sono caratterizzati da un basso valore di $satisfaction\_level$, mentre lo stesso attributo assume valori elevati nei clusters 0, 1, 3 e 6. Il cluster 6 è l'unico con un alto valore di $time\_spend\_company$, mentre per il resto dei clusters l'attributo assume valori bassi. Questo ci dice che i due attributi non sono correlati, altrimenti anche i clusters 0, 1 e 3 avrebbero avuto un alto valore di $time\_spend\_company$. Il cluster 4 ha il più basso valore di $satisfaction\_level$ e il più alto valore di  $average\_montly\_hours$. Inoltre, il cluster 4 ha il più alto valore di $number\_projects$ e un relativamente basso valore di $time\_spend\_company$. Questo significa che il sovraccarico di lavoro dovuto ad una grande quantità di progetti, svolti in poco tempo, porta gli impiegati ad essere infelici. %%
 
 \begin{figure}[hbtp]
 \centering
@@ -59,7 +59,7 @@ La \autoref{fig:centroids} riporta l'analisi per centroidi. Gli attributi dei ce
 \paragraph{}
 In \autoref{fig:kde_clusters} viene fatto un confronto tra le distribuzioni degli attributi dell'intero dataset e quelle dei singoli clusters, in particolare i cluster 4 e 7. L'attributo $number\_project$ assume una distribuizione multi-modale per tutte le kernel density estimation, essendo un attributo intero. Gli attributi $last\_evaluation$ e $average\_montly\_hours$ hanno una distribuzione simile alla normale, ma leggermente schiacciata. Gli stessi attributi assumono una simile forma per il cluster 4. Invece per l'intero dataset i due attributi hanno una distribuzione bi-modale con picchi poco pronunciati, divisi da un lungo plateau. In entrambe le figure \ref{fig:kde_4} e \ref{fig:kde_7} è presente un picco molto acuto per l'attributo $satisfaction\_level$. Entrambi i picchi sono quasi simmetrici, se non per lo scalino nella parte finale a destra del punto medio. Questo comportamento non è ripetuto per l'intero dataset. L'attributo $time\_spend\_company$ assume una distribuzione multi-modale per il cluster 7, con 5 picchi nell'intervallo $\left[0, 0.5\right]$. 
 Mentre per il cluster 4, 
-$time\_spend\_company$ ha meno variabilità riportando un picco relativamente acuto centrato in $0.25$, e altri due picchi meno pronunciati.
+$time\_spend\_company$ ha meno variabilità riportando un picco relativamente acuto centrato in $0.25$, e altri due picchi meno pronunciati. %%
 
 \begin{figure*}%
     \centering
@@ -88,7 +88,7 @@ $time\_spend\_company$ ha meno variabilità riportando un picco relativamente ac
 \end{figure*}
 
 \subsubsection{Visualizzazione del clustering via Principal Component Analysis}
-I risultati ottenuti dal clustering via K-means sono stati combinati con la PCA per visualizzare la proiezione di ogni punto di dati in due dimensioni. Il dataset ha una forma globulare allungata, simile ad un ellisse. I punti di dati sono molto vicini gli uni agli altri formando un dataset molto denso, in cui i cluster 4 e 5 sono molto definiti, mentre i punti degli altri clusters tendono a mischiarsi. In basso a sinistra è presente una zona di bassa densità di punti appartenenti al cluster 0, mentre in alto a destra vi è un chiaro outlier assegnato al cluster 7. La natura dell'outlier in termini di attributi non è stata approfondita.
+I risultati ottenuti dal clustering via K-means sono stati combinati con la PCA per visualizzare la proiezione di ogni punto di dati in due dimensioni. Il dataset ha una forma globulare allungata, simile ad un ellisse. I punti di dati sono molto vicini gli uni agli altri formando un dataset molto denso, in cui i cluster 4 e 5 sono molto definiti, mentre i punti degli altri clusters tendono a mischiarsi. In basso a sinistra è presente una zona di bassa densità di punti appartenenti al cluster 0, mentre in alto a destra vi è un chiaro outlier assegnato al cluster 7. La natura dell'outlier in termini di attributi non è stata approfondita. %%
 
 \begin{figure}[hbtp]
 \centering 
@@ -115,7 +115,7 @@ I grafici, per valori diversi di $k$, avevano la stessa forma, e i valori delle 
 \end{figure}
 
 \paragraph{}
-Per la scelta di $\epsilon$, l'idea era quella di trovare il punto di gomito in \autoref{fig:epsilon_selection}. Dalla figura si vede chiaramente che il punto di gomito giace nell'intervallo di valori $\epsilon \in \left[0.1, 0.3\right]$. Usando un metodo analogo utilizzato in \autoref{trovare_valore_di_k}, si è ottenuto come risultato $\epsilon=0.297$ e $silhouette=0.301$. Dal momento che il valore $\epsilon$ ottenuto era ai margini dell'intervallo di valori predetto visualmente, è stata svolta un'indagine più approfondita per scoprire come variava il valore della $silhouette$ al variare di $\epsilon \in \left[0.1, 0.3\right]$. L'intervallo è stato diviso arbitrariamente in 30 punti. L'andamento della $silhouette$ è mostrato in \autoref{fig:epsilon_vs_silhouette}. Il grafico assume un plateau a partire da $\epsilon \cong 0.26$, in cui la $silhouette$ rimane quasi constante. Selezionando $\epsilon=0.26$ si è ottenuto un insieme di due clusters rispettivamente di 14958 e 6 elementi, con valore di $silhouette=0.344$. I rimanenti 35 punti dati sono stati classificati come noise-points. 
+Per la scelta di $\epsilon$, l'idea era quella di trovare il punto di gomito in \autoref{fig:epsilon_selection}. Dalla figura si vede chiaramente che il punto di gomito giace nell'intervallo di valori $\epsilon \in \left[0.1, 0.3\right]$. Usando un metodo analogo utilizzato in \autoref{trovare_valore_di_k}, si è ottenuto come risultato $\epsilon=0.297$ e $silhouette=0.301$. Dal momento che il valore $\epsilon$ ottenuto era ai margini dell'intervallo di valori predetto visualmente, è stata svolta un'indagine più approfondita per scoprire come variava il valore della $silhouette$ al variare di $\epsilon \in \left[0.1, 0.3\right]$. L'intervallo è stato diviso arbitrariamente in 30 punti. L'andamento della $silhouette$ è mostrato in \autoref{fig:epsilon_vs_silhouette}. Il grafico assume un plateau a partire da $\epsilon \cong 0.26$, in cui la $silhouette$ rimane quasi constante. Selezionando $\epsilon=0.26$ si è ottenuto un insieme di due clusters rispettivamente di 14958 e 6 elementi, con valore di $silhouette=0.344$. I rimanenti 35 punti dati sono stati classificati come noise-points. %%
 
 \begin{figure}[hbtp]
 \centering
@@ -157,7 +157,7 @@ Il dendogramma suggerisce la presenza di 2 clusters ottenuti con una linea di ta
 \end{figure}
 
 \paragraph{Ward's method Linkage.}
-\autoref{fig:ward_linkage} mostra il dendogramma ottenuto con il metodo di Ward. Il clustering ottenuto con questo metodo è il più equilibrato, in quanto nei livelli mostrati in figura, non sono presenti clusters di dimensioni molto piccole. Tuttavia la distanza assume valori molto più elevati rispetto ai precedenti metodi. Per una distanza minore di 15 si hanno unificazioni con incremento graduale della distanza, mentre negli ultimi 6 collegamenti la distanza fa lunghi salti raggiungendo $41.61$. Per questo motivo si è deciso di tagliare il dendogramma a distanza 15 ottenendo 7 clusters.
+\autoref{fig:ward_linkage} mostra il dendogramma ottenuto con il metodo di Ward. Il clustering ottenuto con questo metodo è il più equilibrato, in quanto nei livelli mostrati in figura, non sono presenti clusters di dimensioni molto piccole. Tuttavia la distanza assume valori molto più elevati rispetto ai precedenti metodi. Per una distanza minore di 15 si hanno unificazioni con incremento graduale della distanza, mentre negli ultimi 6 collegamenti la distanza fa lunghi salti raggiungendo $41.61$. Per questo motivo si è deciso di tagliare il dendogramma a distanza 15 ottenendo 7 clusters. %%
 
 \begin{figure}[hbtp]
 \centering
@@ -200,6 +200,6 @@ Gerarchico & \textbf{0.348} \\
 \hline 
 \end{tabular} 
 \label{tab:performance_clustering}
-\end{table}
+\end{table} %%
 
 \end{document}
