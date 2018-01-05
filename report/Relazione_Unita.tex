@@ -123,7 +123,7 @@ max   & 1.0                 & 1.0              & 7             & 310            
 \label{tab:statistics}
 \end{table}
 
-\noindent Di seguito si mostrano, separatamente, le distribuzioni degli attributi categorici e numerali del dataset. Precisamente, la figura \ref{fig:distrib_categ} mostra la distribuzione degli attributi categorici: nell'asse delle ascisse sono riportati i valori assunti da ogni variabile, mentre sulle ordinate compare la frequenza dei singoli valori.
+\noindent Di seguito si mostrano, separatamente, le distribuzioni degli attributi categorici e numerali del dataset. Precisamente, la figura \ref{fig:distrib_categ} mostra la distribuzione degli attributi categorici: nell'asse delle ascisse sono riportati i valori assunti da ogni variabile, mentre sulle ordinate compare la frequenza dei singoli valori. Notiamo che \texttt{promotion_last_5years} assume valori uguali a 1 soltanto nel 2\% dei casi circa. Allo stesso modo, \texttt{salary} assume raramente il valore \textit{high} e \texttt{Work_accident} assuome il valore 0 per oltre l'85\% dei casi. 
 
 \noindent
 \begin{center}
@@ -132,7 +132,7 @@ max   & 1.0                 & 1.0              & 7             & 310            
  \label{fig:distrib_categ}
 \end{center}
 
-\noindent La figura \ref{fig:distrib_numer}, invece, riporta gli istogrammi che riassumono la distribuzione delle variabili numeriche del dataset. Le feature \texttt{number_project} e \texttt{time_spend_company}, in questa sezione, sono considerate numeriche (sebbene in altre fasi dell'analisi esse assumano il ruolo di variabili categoriche).
+\noindent La figura \ref{fig:distrib_numer}, invece, riporta gli istogrammi che riassumono la distribuzione delle variabili numeriche del dataset. Le feature \texttt{number_project} e \texttt{time_spend_company}, in questa sezione, sono considerate numeriche (sebbene in altre fasi dell'analisi esse assumano il ruolo di variabili categoriche). La maggior parte dei valori di \texttt{time_spend_company} si concentra nell'intervallo [2,4], mentre per \texttt{average_montly_hours} emergono due picchi in corrispondenza di un valore basso (150) e un valore alto (260). Si ha una situazione analoga per \texttt{last_evaluation}. Riguardo a \texttt{satisfaction_level}, invece, osserviamo una valle tra 0,2 e 0,3. \texttt{number_project} presenta infine una distribuzione regolare.
 
 \noindent
 \begin{center}
