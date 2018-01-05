@@ -893,7 +893,7 @@ In questa sezione si illustra il processo di classificazione. L'obiettivo è que
 
 \subsection{Classificazione tramite alberi di decisione}
 
-Nel seguito sono riportate le performance di diversi alberi di decisione, ognuno dei quali presenta una diversa configurazione dei parametri di learning. I parametri utilizzato sono i seguenti:
+Nel seguito sono riportate le performance di diversi alberi di decisione, ognuno dei quali presenta una diversa configurazione dei parametri di learning. I parametri utilizzati sono i seguenti:
 
 \begin{itemize}
 \setlength\itemsep{0.30em}
@@ -980,7 +980,7 @@ Il modello nella figura \ref{img:model2}, come il precedente, effettua inizialme
 \subsubsection*{Modello 3}
   
 Anche in questo modello sono stati attribuiti pesi diversi alle due classi. Tuttavia, il vincolo sulla profondità massima è stato eliminato a favore di una strategia di \textit{pre-pruning} (alti valori di \texttt{min_samples_split} e \texttt{min_samples_leaf}).
-Come nei modelli precedenti modelli, la prima suddivisione del modello in figura \ref{img:model3} riguarda \texttt{satisfaction_level}: 
+Come nei precedenti modelli, la prima suddivisione del modello in figura \ref{img:model3} riguarda \texttt{satisfaction_level}: 
 \begin{itemize}
 \item \texttt{satisfaction_level} $\leq$ 0.465: all'impiegato è assegnata la classe \texttt{Left}
 \item \texttt{satisfaction_level} $>$ 0.465: un'ulteriore suddivisione viene effettuata in base al valore di \texttt{time_spend_company}. Se l'impiegato ha un valore dell'attributo superiore a 3.5, allora viene classificato come appartenente alla classe \texttt{Left}. In caso contrario, è molto probabile che ad egli venga attribuita l'etichetta \texttt{Not left} (divisione successiva: \texttt{average_montly_hours})
@@ -1100,7 +1100,7 @@ Modello 4 & 0.973      & 0.971   & 0.972  & 0.971     & 0.962     & 0.960  & 0.9
 
 \subsection{Identificazione del miglior modello}
 
-Per la ricerca del miglior modello \textit{M} (dal punto di vista delle performance) è stato utilizzata strategia basata su \textit{Random Forest}. Questa soluzione consiste nel creare diversi alberi di decisione (ognuno dei quali è allenato su diversi sottoinsiemi del dataset usato per la fase di \textit{training}). Le decisioni prese da questo modello dipendono dalle decisioni prese dai singoli alberi: in questo caso, la decisione presa dalla \textit{Random Forest} è la decisione presa dalla maggior parte degli alberi della foresta (moda).
+Per la ricerca del miglior modello \textit{M} (dal punto di vista delle performance) è stata utilizzata una  strategia basata su \textit{Random Forest}. Questa soluzione consiste nel creare diversi alberi di decisione (ognuno dei quali è allenato su diversi sottoinsiemi del dataset usato per la fase di \textit{training}). Le decisioni prese da questo modello dipendono dalle decisioni prese dai singoli alberi: in questo caso, la decisione presa dalla \textit{Random Forest} è la decisione presa dalla maggior parte degli alberi della foresta (moda).
 
 La scelta dei migliori parametri da utilizzare per il modello \textit{M} è stata approssimata utilizzando una tecnica di \textit{Grid search} con ricerca casuale. Tra tutte le possibili combinazioni di parametri illustrate nella tabella \ref{tab:gridParams} (fornite tramite specifici intervalli di valori) sono state scelte casualmente 100 configurazioni e, tra di esse, è stata selezionata la migliore (vedere ancora la tabella \ref{tab:gridParams}). La funzione scelta per la misurazione della qualità delle suddivisioni è l'\textit{Information Gain} (basata sull'\texttt{entropy}). Per la massima profondità dell'albero, invece, è stato scelto il valore 9: intuitivamente, un valore più alto avrebbe prodotto un modello con problemi di \textit{Overfitting}. Sia per \texttt{min_samples_split} che per \texttt{min_samples_leaf} sono stati scelti due valori molto bassi: in altre parole, si è ritenuto più vantaggioso non usare tecniche di \textit{Pre-pruning}. 
 Parlando invece dei pesi assegnati alle classi \texttt{not_left} e \texttt{left}, notiamo che l'opzione ritenuta più efficiente è assegnare ad entrambe le classi lo stesso peso (valore \texttt{None}).
